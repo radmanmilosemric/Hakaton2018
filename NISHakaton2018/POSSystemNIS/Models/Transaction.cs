@@ -1,12 +1,11 @@
 ﻿
 using System;
-using System.ComponentModel.DataAnnotations;
+
 
 namespace NisHakaton2018.DataModels
 {
     public class Transactions
     {
-        [Key]
         public int TransactionId { get; set; }
         public string SifraBS { get; set; }
         public string BrojRacuna { get; set; }

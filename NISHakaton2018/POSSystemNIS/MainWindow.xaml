@@ -5,12 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:POSSystemNIS"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="800" Width="1000">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="143*"/>
-            <ColumnDefinition Width="39*"/>
-            <ColumnDefinition Width="77*"/>
+            <ColumnDefinition Width="567*"/>
+            <ColumnDefinition Width="131*"/>
+            <ColumnDefinition Width="104*"/>
+            <ColumnDefinition Width="46*"/>
+            <ColumnDefinition Width="145*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="27*"/>
@@ -18,29 +20,402 @@
             <RowDefinition Height="74*"/>
             <RowDefinition Height="122*"/>
         </Grid.RowDefinitions>
-        <StackPanel HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Orientation="Horizontal" Margin="5,5,5.8,4.6" Grid.RowSpan="2" Grid.ColumnSpan="2" Background="#FFDDDDDD" Grid.Row="0">
-
-            <Grid Width="72" Margin="0,0,0,48">
-                <Button Content="" HorizontalAlignment="Left" Height="64" Grid.RowSpan="2" VerticalAlignment="Top" Width="75" BorderBrush="Black" FontSize="24"/>
-            <StackPanel Orientation="Vertical">
-                <Label Foreground="White" FontSize="18"  FontWeight="Bold">1</Label>
-                <Label Foreground="Black" FontSize="10" Background="{x:Null}" HorizontalAlignment="Right">normal</Label>
-                <Label Foreground="Red" FontSize="12" Background="White" HorizontalAlignment="Right">NEMA VEZU</Label>
+        <WrapPanel  HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  Margin="2,2,2.4,2" Grid.RowSpan="2" Grid.ColumnSpan="2" Background="#FFDDDDDD" Grid.Row="0">
+            <Grid Height="110" Width="110">
+                <Button BorderBrush="Black" FontSize="12" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                <StackPanel Orientation="Vertical" IsHitTestVisible="False">
+                    <Label Content="1" Foreground="White" FontSize="24"  FontWeight="Bold" HorizontalAlignment="Stretch" Margin="2,0,2.4,0" IsHitTestVisible="False" Height="43">
+                        <Label.Effect>
+                            <DropShadowEffect BlurRadius="1" ShadowDepth="2" />
+                        </Label.Effect>
+                    </Label>
+                    <Label Foreground="Black" FontSize="10" Background="{x:Null}" HorizontalAlignment="Stretch" Margin="2,0,2.4,0" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" IsHitTestVisible="False" Height="36">normal</Label>
+                    <Label Foreground="Red" FontSize="14" Background="White" Margin="2,0" HorizontalContentAlignment="Center" IsHitTestVisible="False">NEMA VEZU</Label>
+                </StackPanel>
+            </Grid>
+            <Grid Height="110" Width="110">
+                <Button BorderBrush="Black" FontSize="12" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                <StackPanel Orientation="Vertical" IsHitTestVisible="False">
+                    <Label Content="1" Foreground="White" FontSize="24"  FontWeight="Bold" HorizontalAlignment="Stretch" Margin="2,0,2.4,0" IsHitTestVisible="False" Height="43">
+                        <Label.Effect>
+                            <DropShadowEffect BlurRadius="1" ShadowDepth="2" />
+                        </Label.Effect>
+                    </Label>
+                    <Label Foreground="Black" FontSize="10" Background="{x:Null}" HorizontalAlignment="Stretch" Margin="2,0,2.4,0" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" IsHitTestVisible="False" Height="36">normal</Label>
+                    <Label Foreground="Red" FontSize="14" Background="White" Margin="2,0" HorizontalContentAlignment="Center" IsHitTestVisible="False">NEMA VEZU</Label>
+                </StackPanel>
+            </Grid>
+            <Grid Height="110" Width="110">
+                <Button BorderBrush="Black" FontSize="12" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                <StackPanel Orientation="Vertical" IsHitTestVisible="False">
+                    <Label Content="1" Foreground="White" FontSize="24"  FontWeight="Bold" HorizontalAlignment="Stretch" Margin="2,0,2.4,0" IsHitTestVisible="False" Height="43">
+                        <Label.Effect>
+                            <DropShadowEffect BlurRadius="1" ShadowDepth="2" />
+                        </Label.Effect>
+                    </Label>
+                    <Label Foreground="Black" FontSize="10" Background="{x:Null}" HorizontalAlignment="Stretch" Margin="2,0,2.4,0" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" IsHitTestVisible="False" Height="36">normal</Label>
+                    <Label Foreground="Red" FontSize="14" Background="White" Margin="2,0" HorizontalContentAlignment="Center" IsHitTestVisible="False">NEMA VEZU</Label>
+                </StackPanel>
+            </Grid>
+            <Grid Height="110" Width="110">
+                <Button BorderBrush="Black" FontSize="12" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                <StackPanel Orientation="Vertical" IsHitTestVisible="False">
+                    <Label Content="1" Foreground="White" FontSize="24"  FontWeight="Bold" HorizontalAlignment="Stretch" Margin="2,0,2.4,0" IsHitTestVisible="False" Height="43">
+                        <Label.Effect>
+                            <DropShadowEffect BlurRadius="1" ShadowDepth="2" />
+                        </Label.Effect>
+                    </Label>
+                    <Label Foreground="Black" FontSize="10" Background="{x:Null}" HorizontalAlignment="Stretch" Margin="2,0,2.4,0" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" IsHitTestVisible="False" Height="36">normal</Label>
+                    <Label Foreground="Red" FontSize="14" Background="White" Margin="2,0" HorizontalContentAlignment="Center" IsHitTestVisible="False">NEMA VEZU</Label>
+                </StackPanel>
+            </Grid>
+            <Grid Height="110" Width="110">
+                <Button BorderBrush="Black" FontSize="12" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                <StackPanel Orientation="Vertical" IsHitTestVisible="False">
+                    <Label Content="1" Foreground="White" FontSize="24"  FontWeight="Bold" HorizontalAlignment="Stretch" Margin="2,0,2.4,0" IsHitTestVisible="False" Height="43">
+                        <Label.Effect>
+                            <DropShadowEffect BlurRadius="1" ShadowDepth="2" />
+                        </Label.Effect>
+                    </Label>
+                    <Label Foreground="Black" FontSize="10" Background="{x:Null}" HorizontalAlignment="Stretch" Margin="2,0,2.4,0" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" IsHitTestVisible="False" Height="36">normal</Label>
+                    <Label Foreground="Red" FontSize="14" Background="White" Margin="2,0" HorizontalContentAlignment="Center" IsHitTestVisible="False">NEMA VEZU</Label>
+                </StackPanel>
+            </Grid>
+            <Grid Height="110" Width="110">
+                <Button BorderBrush="Black" FontSize="12" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                <StackPanel Orientation="Vertical" IsHitTestVisible="False">
+                    <Label Content="1" Foreground="White" FontSize="24"  FontWeight="Bold" HorizontalAlignment="Stretch" Margin="2,0,2.4,0" IsHitTestVisible="False" Height="43">
+                        <Label.Effect>
+                            <DropShadowEffect BlurRadius="1" ShadowDepth="2" />
+                        </Label.Effect>
+                    </Label>
+                    <Label Foreground="Black" FontSize="10" Background="{x:Null}" HorizontalAlignment="Stretch" Margin="2,0,2.4,0" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" IsHitTestVisible="False" Height="36">normal</Label>
+                    <Label Foreground="Red" FontSize="14" Background="White" Margin="2,0" HorizontalContentAlignment="Center" IsHitTestVisible="False">NEMA VEZU</Label>
+                </StackPanel>
+            </Grid>
+            <Grid Height="110" Width="110">
+                <Button BorderBrush="Black" FontSize="12" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                <StackPanel Orientation="Vertical" IsHitTestVisible="False">
+                    <Label Content="1" Foreground="White" FontSize="24"  FontWeight="Bold" HorizontalAlignment="Stretch" Margin="2,0,2.4,0" IsHitTestVisible="False" Height="43">
+                        <Label.Effect>
+                            <DropShadowEffect BlurRadius="1" ShadowDepth="2" />
+                        </Label.Effect>
+                    </Label>
+                    <Label Foreground="Black" FontSize="10" Background="{x:Null}" HorizontalAlignment="Stretch" Margin="2,0,2.4,0" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" IsHitTestVisible="False" Height="36">normal</Label>
+                    <Label Foreground="Red" FontSize="14" Background="White" Margin="2,0" HorizontalContentAlignment="Center" IsHitTestVisible="False">NEMA VEZU</Label>
+                </StackPanel>
+            </Grid>
+            <Grid Height="110" Width="110">
+                <Button BorderBrush="Black" FontSize="12" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                <StackPanel Orientation="Vertical" IsHitTestVisible="False">
+                    <Label Content="1" Foreground="White" FontSize="24"  FontWeight="Bold" HorizontalAlignment="Stretch" Margin="2,0,2.4,0" IsHitTestVisible="False" Height="43">
+                        <Label.Effect>
+                            <DropShadowEffect BlurRadius="1" ShadowDepth="2" />
+                        </Label.Effect>
+                    </Label>
+                    <Label Foreground="Black" FontSize="10" Background="{x:Null}" HorizontalAlignment="Stretch" Margin="2,0,2.4,0" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" IsHitTestVisible="False" Height="36">normal</Label>
+                    <Label Foreground="Red" FontSize="14" Background="White" Margin="2,0" HorizontalContentAlignment="Center" IsHitTestVisible="False">NEMA VEZU</Label>
+                </StackPanel>
+            </Grid>
+            <Grid Height="110" Width="110">
+                <Button BorderBrush="Black" FontSize="12" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                <StackPanel Orientation="Vertical" IsHitTestVisible="False">
+                    <Label Content="1" Foreground="White" FontSize="24"  FontWeight="Bold" HorizontalAlignment="Stretch" Margin="2,0,2.4,0" IsHitTestVisible="False" Height="43">
+                        <Label.Effect>
+                            <DropShadowEffect BlurRadius="1" ShadowDepth="2" />
+                        </Label.Effect>
+                    </Label>
+                    <Label Foreground="Black" FontSize="10" Background="{x:Null}" HorizontalAlignment="Stretch" Margin="2,0,2.4,0" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" IsHitTestVisible="False" Height="36">normal</Label>
+                    <Label Foreground="Red" FontSize="14" Background="White" Margin="2,0" HorizontalContentAlignment="Center" IsHitTestVisible="False">NEMA VEZU</Label>
+                </StackPanel>
+            </Grid>
+            <Grid Height="110" Width="110">
+                <Button BorderBrush="Black" FontSize="12" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                <StackPanel Orientation="Vertical" IsHitTestVisible="False">
+                    <Label Content="1" Foreground="White" FontSize="24"  FontWeight="Bold" HorizontalAlignment="Stretch" Margin="2,0,2.4,0" IsHitTestVisible="False" Height="43">
+                        <Label.Effect>
+                            <DropShadowEffect BlurRadius="1" ShadowDepth="2" />
+                        </Label.Effect>
+                    </Label>
+                    <Label Foreground="Black" FontSize="10" Background="{x:Null}" HorizontalAlignment="Stretch" Margin="2,0,2.4,0" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" IsHitTestVisible="False" Height="36">normal</Label>
+                    <Label Foreground="Red" FontSize="14" Background="White" Margin="2,0" HorizontalContentAlignment="Center" IsHitTestVisible="False">NEMA VEZU</Label>
+                </StackPanel>
+            </Grid>
+            <Grid Height="110" Width="110">
+                <Button BorderBrush="Black" FontSize="12" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                <StackPanel Orientation="Vertical" IsHitTestVisible="False">
+                    <Label Content="1" Foreground="White" FontSize="24"  FontWeight="Bold" HorizontalAlignment="Stretch" Margin="2,0,2.4,0" IsHitTestVisible="False" Height="43">
+                        <Label.Effect>
+                            <DropShadowEffect BlurRadius="1" ShadowDepth="2" />
+                        </Label.Effect>
+                    </Label>
+                    <Label Foreground="Black" FontSize="10" Background="{x:Null}" HorizontalAlignment="Stretch" Margin="2,0,2.4,0" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" IsHitTestVisible="False" Height="36">normal</Label>
+                    <Label Foreground="Red" FontSize="14" Background="White" Margin="2,0" HorizontalContentAlignment="Center" IsHitTestVisible="False">NEMA VEZU</Label>
+                </StackPanel>
+            </Grid>
+            <Grid Height="110" Width="110">
+                <Button BorderBrush="Black" FontSize="12" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                <StackPanel Orientation="Vertical" IsHitTestVisible="False">
+                    <Label Content="1" Foreground="White" FontSize="24"  FontWeight="Bold" HorizontalAlignment="Stretch" Margin="2,0,2.4,0" IsHitTestVisible="False" Height="43">
+                        <Label.Effect>
+                            <DropShadowEffect BlurRadius="1" ShadowDepth="2" />
+                        </Label.Effect>
+                    </Label>
+                    <Label Foreground="Black" FontSize="10" Background="{x:Null}" HorizontalAlignment="Stretch" Margin="2,0,2.4,0" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" IsHitTestVisible="False" Height="36">normal</Label>
+                    <Label Foreground="Red" FontSize="14" Background="White" Margin="2,0" HorizontalContentAlignment="Center" IsHitTestVisible="False">NEMA VEZU</Label>
                 </StackPanel>
             </Grid>
 
-        </StackPanel>
 
-        <StackPanel HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Orientation="Horizontal" Margin="4.2,5,5.4,4.6" Grid.RowSpan="2" Background="#FFDDDDDD" Grid.Row="0" Grid.Column="2"/>
+        </WrapPanel>
+
+        <WrapPanel Orientation="Vertical" Margin="1.6,2" Grid.RowSpan="2" Grid.Row="0" Grid.Column="2" Grid.ColumnSpan="3">
+            <WrapPanel.Background>
+                <LinearGradientBrush EndPoint="1,1" StartPoint="0,1">
+                    <GradientStop Color="#FF193073"/>
+                    <GradientStop Color="White" Offset="1"/>
+                    <GradientStop Color="#FFC9CEDE" Offset="0.795"/>
+                    <GradientStop Color="#FF8793B6" Offset="0.384"/>
+                    <GradientStop Color="#FFE3E6EE" Offset="0.992"/>
+                </LinearGradientBrush>
+            </WrapPanel.Background>
+            <Label Foreground="White" FontSize="20" Content="Automat : 1" HorizontalContentAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Center" Width="285" FontWeight="Bold">
+                <Label.Effect>
+                    <DropShadowEffect BlurRadius="1" ShadowDepth="2" />
+                </Label.Effect>
+            </Label>
+            <Label Foreground="White" FontSize="20" Content="Gorivo : G Drive" VerticalAlignment="Top" HorizontalContentAlignment="Center" FontWeight="Bold">
+                <Label.Effect>
+                    <DropShadowEffect BlurRadius="1" ShadowDepth="2" />
+                </Label.Effect>
+            </Label>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="3*"/>
+                </Grid.ColumnDefinitions>
+                <WrapPanel Orientation="Vertical" Grid.Column="0"   >
+
+                    <WrapPanel Orientation="Vertical" >
+                        <Label Foreground="White" FontSize="18" Content="Iznos:" HorizontalContentAlignment="Right" VerticalAlignment="Top" FontWeight="Bold">
+                            <Label.Effect>
+                                <DropShadowEffect BlurRadius="1" ShadowDepth="2" />
+                            </Label.Effect>
+                        </Label>
+                        <Label Foreground="White" FontSize="18" Content="Litara:" HorizontalContentAlignment="Right" VerticalAlignment="Top" FontWeight="Bold">
+                            <Label.Effect>
+                                <DropShadowEffect BlurRadius="1" ShadowDepth="2" />
+                            </Label.Effect>
+                        </Label>
+                        <Label Foreground="White" FontSize="18" Content="Cena:" HorizontalContentAlignment="Right" VerticalAlignment="Top" FontWeight="Bold">
+                            <Label.Effect>
+                                <DropShadowEffect BlurRadius="1" ShadowDepth="2" />
+                            </Label.Effect>
+                        </Label>
+                        <Label Foreground="White" FontSize="18" Content="TOTAL:" HorizontalContentAlignment="Right" VerticalAlignment="Top" FontWeight="Bold">
+                            <Label.Effect>
+                                <DropShadowEffect BlurRadius="1" ShadowDepth="2" />
+                            </Label.Effect>
+                        </Label>
+                        <Label Foreground="White" FontSize="18" Content="Placeno:" HorizontalContentAlignment="Right" VerticalAlignment="Top" FontWeight="Bold">
+                            <Label.Effect>
+                                <DropShadowEffect BlurRadius="1" ShadowDepth="2" />
+                            </Label.Effect>
+                        </Label>
+                        <Label Foreground="White" FontSize="18" Content="Kurs:" HorizontalContentAlignment="Right" VerticalAlignment="Top" FontWeight="Bold">
+                            <Label.Effect>
+                                <DropShadowEffect BlurRadius="1" ShadowDepth="2" />
+                            </Label.Effect>
+                        </Label>
+
+                    </WrapPanel>
 
 
-        <StackPanel HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Orientation="Horizontal" Margin="5,5.4,1.4,4.8" Grid.RowSpan="2" Grid.ColumnSpan="1" Background="#FFDDDDDD" Grid.Row="2"/>
+                </WrapPanel>
+                <WrapPanel Orientation="Vertical" Grid.Column="1"   >
+                    <Image Source="IMG2.jpg" Height="98" Width="172"/>
 
-        <StackPanel HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Orientation="Horizontal" Margin="8.6,5.4,5.4,5.2" Grid.RowSpan="1" Grid.ColumnSpan="2" Background="#FFDDDDDD" Grid.Row="2" Grid.Column="1"/>
+                    <Label Foreground="White" FontSize="18" Content="146.40" HorizontalContentAlignment="Right" VerticalAlignment="Top" FontWeight="Bold">
+                        <Label.Effect>
+                            <DropShadowEffect BlurRadius="1" ShadowDepth="2" />
+                        </Label.Effect>
+                    </Label>
+                    <Label Foreground="White" FontSize="18" Content="0.00" HorizontalContentAlignment="Right" VerticalAlignment="Top" FontWeight="Bold">
+                        <Label.Effect>
+                            <DropShadowEffect BlurRadius="1" ShadowDepth="2" />
+                        </Label.Effect>
+                    </Label>
+                    <Label Foreground="White" FontSize="18" Content="0.00" HorizontalContentAlignment="Right" VerticalAlignment="Top" FontWeight="Bold">
+                        <Label.Effect>
+                            <DropShadowEffect BlurRadius="1" ShadowDepth="2" />
+                        </Label.Effect>
+                    </Label>
 
-        <StackPanel HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Orientation="Horizontal" Margin="8.6,4.8,5.4,4.8" Grid.ColumnSpan="2" Background="#FFDDDDDD" Grid.Row="3" Grid.Column="1">
-        </StackPanel>
-       
+                </WrapPanel>
+            </Grid>
+        </WrapPanel>
+
+        <WrapPanel HorizontalAlignment="Stretch" Margin="2,2,2.2,1.6" VerticalAlignment="Stretch" Orientation="Horizontal" Grid.RowSpan="1" Background="#FFDDDDDD" Grid.Row="2">
+            <Button Content="Cetiranje" Height="80" Width="80" BorderBrush="Black" Foreground="White" FontSize="12" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#FF092469" FontWeight="Bold"/>
+            <Button  Height="80" Width="80" BorderBrush="Black" Foreground="White" FontSize="12" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#FF092469" FontWeight="Bold">
+                <StackPanel>
+                    <TextBlock Text="Pregled" HorizontalAlignment="Center"/>
+                    <TextBlock Text="totala" HorizontalAlignment="Center"/>
+                </StackPanel>
+            </Button>
+            <Button Content="Log Out" Height="80" Width="80" BorderBrush="Black" Foreground="White" FontSize="12" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#FF092469" FontWeight="Bold"/>
+            <Button  Height="80" Width="80" BorderBrush="Black" Foreground="White" FontSize="12" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#FF092469" FontWeight="Bold">
+                <StackPanel>
+                    <TextBlock Text="Card upit" HorizontalAlignment="Center"/>
+                    <TextBlock Text="stanja" HorizontalAlignment="Center"/>
+                    <TextBlock Text="CTRL+1" HorizontalAlignment="Center"/>
+                </StackPanel>
+            </Button>
+            <Button  Height="80" Width="80" BorderBrush="Black" Foreground="White" FontSize="12" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#FFCB0101" FontWeight="Bold">
+                <StackPanel>
+                    <TextBlock Text="Kraj fisk." HorizontalAlignment="Center"/>
+                    <TextBlock Text="dana" HorizontalAlignment="Center"/>
+                </StackPanel>
+            </Button>
+            <Button Content="BOS" Height="80" Width="80" BorderBrush="Black" Foreground="White" FontSize="12" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#FFCB0101" FontWeight="Bold"/>
+            <Button  Height="80" Width="80" BorderBrush="Black" Foreground="White" FontSize="12" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#FF092469" FontWeight="Bold">
+                <StackPanel>
+                    <TextBlock Text="Vanredni" HorizontalAlignment="Center"/>
+                    <TextBlock Text="podaci" HorizontalAlignment="Center"/>
+                </StackPanel>
+            </Button>
+
+            <Button Content="IZLAZ" Height="80" Width="80" BorderBrush="Black" Foreground="White" FontSize="12" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#FFCB0101" FontWeight="Bold"/>
+
+            <Button  Height="80" Width="80" BorderBrush="Black" Foreground="White" FontSize="12" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#FF092469" FontWeight="Bold">
+                <StackPanel>
+                    <TextBlock Text="PDV Racun" HorizontalAlignment="Center" />
+                    <TextBlock Text="CTRL+P" HorizontalAlignment="Center" />
+                </StackPanel>
+            </Button>
+
+            <Grid>
+                
+                
+                
+            </Grid>
+        </WrapPanel>
+
+        <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  Margin="1.8,2,1.6,1.6" Grid.RowSpan="1" Grid.ColumnSpan="4" Background="#FFDDDDDD" Grid.Row="2" Grid.Column="1">
+            <TextBox Background="#00000000" Foreground="Red" FontSize="18" Margin="7" BorderBrush="Black" >RASPOLOZIVO : 318116.06000 LIT</TextBox>
+        </Grid>
+
+        <WrapPanel HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Orientation="Horizontal" Margin="1.8,2.4,2.4,2.4" Grid.ColumnSpan="2" Background="#FFDDDDDD" Grid.Row="3" Grid.Column="1">
+            <Button  Height="45" Width="70" Content="1" BorderBrush="Black" Foreground="White" FontSize="28" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#FF092469" FontWeight="Bold"/>
+            <Button  Height="45" Width="70" Content="2" BorderBrush="Black" Foreground="White" FontSize="28" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#FF092469" FontWeight="Bold"/>
+            <Button  Height="45" Width="70" Content="3" BorderBrush="Black" Foreground="White" FontSize="28" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#FF092469" FontWeight="Bold"/>
+            <Button  Height="45" Width="70" Content="4" BorderBrush="Black" Foreground="White" FontSize="28" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#FF092469" FontWeight="Bold"/>
+            <Button  Height="45" Width="70" Content="5" BorderBrush="Black" Foreground="White" FontSize="28" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#FF092469" FontWeight="Bold"/>
+            <Button  Height="45" Width="70" Content="6" BorderBrush="Black" Foreground="White" FontSize="28" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#FF092469" FontWeight="Bold"/>
+            <Button  Height="45" Width="70" Content="7" BorderBrush="Black" Foreground="White" FontSize="28" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#FF092469" FontWeight="Bold"/>
+            <Button  Height="45" Width="70" Content="8" BorderBrush="Black" Foreground="White" FontSize="28" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#FF092469" FontWeight="Bold"/>
+            <Button  Height="45" Width="70" Content="9" BorderBrush="Black" Foreground="White" FontSize="28" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#FF092469" FontWeight="Bold"/>
+            <Button  Height="45" Width="70" Content="0" BorderBrush="Black" Foreground="White" FontSize="28" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#FF092469" FontWeight="Bold"/>
+            <Button  Height="45" Width="70" Content="00" BorderBrush="Black" Foreground="White" FontSize="28" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#FF092469" FontWeight="Bold"/>
+            <Button  Height="45" Width="70" Content="." BorderBrush="Black" Foreground="White" FontSize="28" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#FF092469" FontWeight="Bold"/>
+            <Button  Height="45" Width="70" Content="C" BorderBrush="Black" Foreground="White" FontSize="28" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#FFC90000" FontWeight="Bold"/>
+            <Button  Height="45" Width="70" Visibility="Hidden"  BorderBrush="Black" Foreground="White" FontSize="28" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#FF092469" FontWeight="Bold"/>
+            <Button  Height="45" Width="70" Content="CE" BorderBrush="Black" Foreground="White" FontSize="28" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#FFC40200" FontWeight="Bold"/>
+            <Button  Height="45" Width="210" Content="POTVRDA" BorderBrush="Black" Foreground="White" FontSize="20" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="ForestGreen" FontWeight="Bold"/>
+
+        </WrapPanel>
+
+        <WrapPanel HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Orientation="Vertical" Margin="1.6,2.4" Grid.ColumnSpan="2" Background="#FFDDDDDD" Grid.Row="3" Grid.Column="3">
+            <Button  Height="55" Width="80" BorderBrush="Black" Foreground="White" FontSize="10" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#FF092469" FontWeight="Bold">
+                <StackPanel>
+                    <TextBlock Text="F5" HorizontalAlignment="Center"/>
+                    <TextBlock Text="GOTOVINA" HorizontalAlignment="Center"/>
+                </StackPanel>
+            </Button>
+            <Button  Height="55" Width="80" BorderBrush="Black" Foreground="White" FontSize="10" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#FF092469" FontWeight="Bold">
+                <StackPanel>
+                    <TextBlock Text="F6" HorizontalAlignment="Center"/>
+                    <TextBlock Text="CEK" HorizontalAlignment="Center"/>
+                </StackPanel>
+            </Button>
+            <Button  Height="55" Width="80" BorderBrush="Black" Foreground="White" FontSize="10" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#FF092469" FontWeight="Bold">
+                <StackPanel>
+                    <TextBlock Text="F7" HorizontalAlignment="Center"/>
+                    <TextBlock Text="BANK" HorizontalAlignment="Center"/>
+                    <TextBlock Text="KARTICE" HorizontalAlignment="Center"/>
+                </StackPanel>
+            </Button>
+            <Button  Height="55" Width="80" BorderBrush="Black" Foreground="White" FontSize="10" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#FF092469" FontWeight="Bold">
+                <StackPanel>
+                    <TextBlock Text="F8" HorizontalAlignment="Center"/>
+                    <TextBlock Text="SUPER" HorizontalAlignment="Center"/>
+                    <TextBlock Text="KARTICE" HorizontalAlignment="Center"/>
+                </StackPanel>
+            </Button>
+            <Button  Height="55" Width="80" BorderBrush="Black" Foreground="White" FontSize="10" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#FF092469" FontWeight="Bold">
+                <StackPanel>
+                    <TextBlock Text="F10" HorizontalAlignment="Center"/>
+                    <TextBlock Text="KORP." HorizontalAlignment="Center"/>
+                    <TextBlock Text="KARTICA" HorizontalAlignment="Center"/>
+                </StackPanel>
+            </Button>
+            <Button  Height="55" Width="80" BorderBrush="Black" Foreground="White" FontSize="10" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#FF092469" FontWeight="Bold">
+                <StackPanel>
+                    <TextBlock Text="F9" HorizontalAlignment="Center"/>
+                    <TextBlock Text="DRUGI" HorizontalAlignment="Center"/>
+                    <TextBlock Text="ELEMENTI" HorizontalAlignment="Center"/>
+                </StackPanel>
+            </Button>
+            <Button  Height="55" Width="80" BorderBrush="Black" Foreground="White" FontSize="10" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#FF092469" FontWeight="Bold">
+                <StackPanel>
+                    <TextBlock Text="F12" HorizontalAlignment="Center"/>
+                    <TextBlock Text="SA NAMA" HorizontalAlignment="Center"/>
+                    <TextBlock Text="NA PUTU" HorizontalAlignment="Center"/>
+                </StackPanel>
+            </Button>
+
+        </WrapPanel>
+
+        <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  Margin="2,2.4,2.2,2.4" Grid.ColumnSpan="1" Background="#FFA5A5A5" Grid.Row="3" Grid.Column="0">
+            <Label Background="Blue" Content="Broj racuna: 631625" VerticalAlignment="Top" Foreground="White" FontWeight="Bold"/>
+
+            <DataGrid Margin="0,26,0.2,-0.2"  ColumnWidth="*" Background="Gray">
+
+
+                <DataGrid.Columns>
+                    <DataGridTextColumn  Header="R.Br." Binding="{Binding Date}" Width="55" ClipboardContentBinding="{x:Null}" >
+                        <DataGridTextColumn.ElementStyle>
+                            <Style TargetType="{x:Type TextBlock}">
+                                <Setter Property="Background" Value="Blue"/>
+                            </Style>
+                        </DataGridTextColumn.ElementStyle>
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Header="Opis" Binding="{Binding FullName}" ClipboardContentBinding="{x:Null}" >
+                        <DataGridTextColumn.ElementStyle>
+                            <Style TargetType="{x:Type TextBlock}">
+                                <Setter Property="Background" Value="Blue"/>
+                            </Style>
+                        </DataGridTextColumn.ElementStyle>
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Header="Cena" Binding="{Binding Notes}" Width="120" ClipboardContentBinding="{x:Null}" >
+                        <DataGridTextColumn.ElementStyle>
+                            <Style TargetType="{x:Type TextBlock}">
+                                <Setter Property="Background" Value="Blue"/>
+                            </Style>
+                        </DataGridTextColumn.ElementStyle>
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Header="Kolicina" Binding="{Binding Notes}" Width="100" ClipboardContentBinding="{x:Null}" >
+                        <DataGridTextColumn.ElementStyle>
+                            <Style TargetType="{x:Type TextBlock}">
+                                <Setter Property="Background" Value="Blue"/>
+                            </Style>
+                        </DataGridTextColumn.ElementStyle>
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Header="Vrednost" Binding="{Binding Notes}" Width="90" ClipboardContentBinding="{x:Null}" />
+                </DataGrid.Columns>
+            </DataGrid>
+        </Grid>
+
 
 
     </Grid>
