@@ -8,9 +8,12 @@ namespace NisHakaton2018.Controllers
 {
     public class DataStatisticController : Controller
     {
+
         public IActionResult Index()
         {
             return View();
         }
+
+       
     }
 }
