@@ -1,0 +1,11 @@
+C:\SOURCECONTROL\Hakaton2018\NISHakaton2018\NisHakaton2018\bin\Debug\netcoreapp2.0\NisHakaton2018.deps.json
+C:\SOURCECONTROL\Hakaton2018\NISHakaton2018\NisHakaton2018\bin\Debug\netcoreapp2.0\NisHakaton2018.runtimeconfig.json
+C:\SOURCECONTROL\Hakaton2018\NISHakaton2018\NisHakaton2018\bin\Debug\netcoreapp2.0\NisHakaton2018.runtimeconfig.dev.json
+C:\SOURCECONTROL\Hakaton2018\NISHakaton2018\NisHakaton2018\bin\Debug\netcoreapp2.0\NisHakaton2018.dll
+C:\SOURCECONTROL\Hakaton2018\NISHakaton2018\NisHakaton2018\bin\Debug\netcoreapp2.0\NisHakaton2018.pdb
+C:\SOURCECONTROL\Hakaton2018\NISHakaton2018\NisHakaton2018\obj\Debug\netcoreapp2.0\NisHakaton2018.csprojResolveAssemblyReference.cache
+C:\SOURCECONTROL\Hakaton2018\NISHakaton2018\NisHakaton2018\obj\Debug\netcoreapp2.0\NisHakaton2018.csproj.CoreCompileInputs.cache
+C:\SOURCECONTROL\Hakaton2018\NISHakaton2018\NisHakaton2018\obj\Debug\netcoreapp2.0\NisHakaton2018.AssemblyInfoInputs.cache
+C:\SOURCECONTROL\Hakaton2018\NISHakaton2018\NisHakaton2018\obj\Debug\netcoreapp2.0\NisHakaton2018.AssemblyInfo.cs
+C:\SOURCECONTROL\Hakaton2018\NISHakaton2018\NisHakaton2018\obj\Debug\netcoreapp2.0\NisHakaton2018.dll
+C:\SOURCECONTROL\Hakaton2018\NISHakaton2018\NisHakaton2018\obj\Debug\netcoreapp2.0\NisHakaton2018.pdb
