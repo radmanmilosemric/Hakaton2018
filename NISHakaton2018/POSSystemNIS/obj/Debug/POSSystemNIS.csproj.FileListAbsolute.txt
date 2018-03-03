@@ -14,4 +14,3 @@ C:\SOURCECONTROL\Hakaton2018\NISHakaton2018\POSSystemNIS\obj\Debug\POSSystemNIS.
 C:\SOURCECONTROL\Hakaton2018\NISHakaton2018\POSSystemNIS\obj\Debug\POSSystemNIS.csproj.CoreCompileInputs.cache
 C:\SOURCECONTROL\Hakaton2018\NISHakaton2018\POSSystemNIS\obj\Debug\POSSystemNIS.exe
 C:\SOURCECONTROL\Hakaton2018\NISHakaton2018\POSSystemNIS\obj\Debug\POSSystemNIS.pdb
-C:\SOURCECONTROL\Hakaton2018\NISHakaton2018\POSSystemNIS\obj\Debug\POSSystemNIS.csprojResolveAssemblyReference.cache
