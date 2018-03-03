@@ -62,7 +62,7 @@ namespace NisHakaton2018
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                    template: "{controller=POS}/{action=Index}/{id?}");
             });
         }
     }

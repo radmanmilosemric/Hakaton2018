@@ -1,7 +1,6 @@
-﻿using System;
+﻿using NisHakaton2018.DataModels;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace NisHakaton2018.Repository
 {
