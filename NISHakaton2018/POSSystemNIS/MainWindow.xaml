@@ -4,10 +4,11 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:POSSystemNIS"
+        xmlns:mod="clr-namespace:NisHakaton2018.DataModels"
         mc:Ignorable="d"
-        Title="MainWindow" Height="800" Width="1300">
+        Title="NIS POS" Height="800" Width="1300" FontFamily="MS Office Symbol (tr-tr) Bold" >
 
-    <Viewbox Stretch="UniformToFill">
+    <Viewbox Stretch="Uniform">
 
         <Grid Height="770" Width="1294">
             <Grid.ColumnDefinitions>
@@ -34,7 +35,7 @@
                             </Label.Effect>
                         </Label>
                         <Label Foreground="Black" FontSize="10" Background="{x:Null}" HorizontalAlignment="Stretch" Margin="2,0,2.4,0" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" IsHitTestVisible="False" Height="36" Content="normal"/>
-                        <Label Foreground="Red" FontSize="14" Background="White" Margin="2,0" HorizontalContentAlignment="Center" IsHitTestVisible="False" Content="NEMA VEZU"/>
+                        <Label Foreground="Red" FontSize="14" Background="White" Margin="2,0" HorizontalContentAlignment="Center" IsHitTestVisible="False" Content="Nema vezu"/>
                     </StackPanel>
                 </Grid>
                 <Grid Height="110" Width="110">
@@ -46,7 +47,7 @@
                             </Label.Effect>
                         </Label>
                         <Label Foreground="Black" FontSize="10" Background="{x:Null}" HorizontalAlignment="Stretch" Margin="2,0,2.4,0" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" IsHitTestVisible="False" Height="36" Content="normal"/>
-                        <Label Foreground="Red" FontSize="14" Background="White" Margin="2,0" HorizontalContentAlignment="Center" IsHitTestVisible="False" Content="NEMA VEZU"/>
+                        <Label Foreground="Red" FontSize="14" Background="White" Margin="2,0" HorizontalContentAlignment="Center" IsHitTestVisible="False" Content="Nema vezu"/>
                     </StackPanel>
                 </Grid>
                 <Grid Height="110" Width="110">
@@ -58,7 +59,7 @@
                             </Label.Effect>
                         </Label>
                         <Label Foreground="Black" FontSize="10" Background="{x:Null}" HorizontalAlignment="Stretch" Margin="2,0,2.4,0" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" IsHitTestVisible="False" Height="36" Content="normal"/>
-                        <Label Foreground="Red" FontSize="14" Background="White" Margin="2,0" HorizontalContentAlignment="Center" IsHitTestVisible="False" Content="NEMA VEZU"/>
+                        <Label Foreground="Red" FontSize="14" Background="White" Margin="2,0" HorizontalContentAlignment="Center" IsHitTestVisible="False" Content="Nema vezu"/>
                     </StackPanel>
                 </Grid>
                 <Grid Height="110" Width="110">
@@ -70,7 +71,7 @@
                             </Label.Effect>
                         </Label>
                         <Label Foreground="Black" FontSize="10" Background="{x:Null}" HorizontalAlignment="Stretch" Margin="2,0,2.4,0" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" IsHitTestVisible="False" Height="36" Content="normal"/>
-                        <Label Foreground="Red" FontSize="14" Background="White" Margin="2,0" HorizontalContentAlignment="Center" IsHitTestVisible="False" Content="NEMA VEZU"/>
+                        <Label Foreground="Red" FontSize="14" Background="White" Margin="2,0" HorizontalContentAlignment="Center" IsHitTestVisible="False" Content="Nema vezu"/>
                     </StackPanel>
                 </Grid>
                 <Grid Height="110" Width="110">
@@ -82,7 +83,7 @@
                             </Label.Effect>
                         </Label>
                         <Label Foreground="Black" FontSize="10" Background="{x:Null}" HorizontalAlignment="Stretch" Margin="2,0,2.4,0" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" IsHitTestVisible="False" Height="36" Content="normal"/>
-                        <Label Foreground="Red" FontSize="14" Background="White" Margin="2,0" HorizontalContentAlignment="Center" IsHitTestVisible="False" Content="NEMA VEZU"/>
+                        <Label Foreground="Red" FontSize="14" Background="White" Margin="2,0" HorizontalContentAlignment="Center" IsHitTestVisible="False" Content="Nema vezu"/>
                     </StackPanel>
                 </Grid>
                 <Grid Height="110" Width="110">
@@ -94,7 +95,7 @@
                             </Label.Effect>
                         </Label>
                         <Label Foreground="Black" FontSize="10" Background="{x:Null}" HorizontalAlignment="Stretch" Margin="2,0,2.4,0" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" IsHitTestVisible="False" Height="36" Content="normal"/>
-                        <Label Foreground="Red" FontSize="14" Background="White" Margin="2,0" HorizontalContentAlignment="Center" IsHitTestVisible="False" Content="NEMA VEZU"/>
+                        <Label Foreground="Red" FontSize="14" Background="White" Margin="2,0" HorizontalContentAlignment="Center" IsHitTestVisible="False" Content="Nema vezu"/>
                     </StackPanel>
                 </Grid>
                 <Grid Height="110" Width="110">
@@ -106,7 +107,7 @@
                             </Label.Effect>
                         </Label>
                         <Label Foreground="Black" FontSize="10" Background="{x:Null}" HorizontalAlignment="Stretch" Margin="2,0,2.4,0" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" IsHitTestVisible="False" Height="36" Content="normal"/>
-                        <Label Foreground="Red" FontSize="14" Background="White" Margin="2,0" HorizontalContentAlignment="Center" IsHitTestVisible="False" Content="NEMA VEZU"/>
+                        <Label Foreground="Red" FontSize="14" Background="White" Margin="2,0" HorizontalContentAlignment="Center" IsHitTestVisible="False" Content="Nema vezu"/>
                     </StackPanel>
                 </Grid>
                 <Grid Height="110" Width="110">
@@ -118,7 +119,7 @@
                             </Label.Effect>
                         </Label>
                         <Label Foreground="Black" FontSize="10" Background="{x:Null}" HorizontalAlignment="Stretch" Margin="2,0,2.4,0" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" IsHitTestVisible="False" Height="36" Content="normal"/>
-                        <Label Foreground="Red" FontSize="14" Background="White" Margin="2,0" HorizontalContentAlignment="Center" IsHitTestVisible="False" Content="NEMA VEZU"/>
+                        <Label Foreground="Red" FontSize="14" Background="White" Margin="2,0" HorizontalContentAlignment="Center" IsHitTestVisible="False" Content="Nema vezu"/>
                     </StackPanel>
                 </Grid>
                 <Grid Height="110" Width="110">
@@ -130,7 +131,7 @@
                             </Label.Effect>
                         </Label>
                         <Label Foreground="Black" FontSize="10" Background="{x:Null}" HorizontalAlignment="Stretch" Margin="2,0,2.4,0" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" IsHitTestVisible="False" Height="36" Content="normal"/>
-                        <Label Foreground="Red" FontSize="14" Background="White" Margin="2,0" HorizontalContentAlignment="Center" IsHitTestVisible="False" Content="NEMA VEZU"/>
+                        <Label Foreground="Red" FontSize="14" Background="White" Margin="2,0" HorizontalContentAlignment="Center" IsHitTestVisible="False" Content="Nema vezu"/>
                     </StackPanel>
                 </Grid>
                 <Grid Height="110" Width="110">
@@ -142,7 +143,7 @@
                             </Label.Effect>
                         </Label>
                         <Label Foreground="Black" FontSize="10" Background="{x:Null}" HorizontalAlignment="Stretch" Margin="2,0,2.4,0" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" IsHitTestVisible="False" Height="36" Content="normal"/>
-                        <Label Foreground="Red" FontSize="14" Background="White" Margin="2,0" HorizontalContentAlignment="Center" IsHitTestVisible="False" Content="NEMA VEZU"/>
+                        <Label Foreground="Red" FontSize="14" Background="White" Margin="2,0" HorizontalContentAlignment="Center" IsHitTestVisible="False" Content="Nema vezu"/>
                     </StackPanel>
                 </Grid>
                 <Grid Height="110" Width="110">
@@ -154,7 +155,7 @@
                             </Label.Effect>
                         </Label>
                         <Label Foreground="Black" FontSize="10" Background="{x:Null}" HorizontalAlignment="Stretch" Margin="2,0,2.4,0" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" IsHitTestVisible="False" Height="36" Content="normal"/>
-                        <Label Foreground="Red" FontSize="14" Background="White" Margin="2,0" HorizontalContentAlignment="Center" IsHitTestVisible="False" Content="NEMA VEZU"/>
+                        <Label Foreground="Red" FontSize="14" Background="White" Margin="2,0" HorizontalContentAlignment="Center" IsHitTestVisible="False" Content="Nema vezu"/>
                     </StackPanel>
                 </Grid>
                 <Grid Height="110" Width="110">
@@ -166,7 +167,7 @@
                             </Label.Effect>
                         </Label>
                         <Label Foreground="Black" FontSize="10" Background="{x:Null}" HorizontalAlignment="Stretch" Margin="2,0,2.4,0" HorizontalContentAlignment="Right" VerticalContentAlignment="Bottom" IsHitTestVisible="False" Height="36" Content="normal"/>
-                        <Label Foreground="Red" FontSize="14" Background="White" Margin="2,0" HorizontalContentAlignment="Center" IsHitTestVisible="False" Content="NEMA VEZU"/>
+                        <Label Foreground="Red" FontSize="14" Background="White" Margin="2,0" HorizontalContentAlignment="Center" IsHitTestVisible="False" Content="Nema vezu"/>
                     </StackPanel>
                 </Grid>
 
@@ -201,32 +202,32 @@
                     <WrapPanel Orientation="Vertical" Grid.Column="0" Grid.ColumnSpan="2" Margin="0,0,174.031,-0.2"   >
 
                         <WrapPanel Orientation="Vertical" >
-                            <Label Foreground="White" FontSize="18" Content="Iznos:" HorizontalContentAlignment="Right" VerticalAlignment="Top" FontWeight="Bold">
+                            <Label Foreground="White" FontSize="20" Content="Iznos:" HorizontalContentAlignment="Right" VerticalAlignment="Top" FontWeight="Bold" Margin="0,0,0,5">
                                 <Label.Effect>
                                     <DropShadowEffect BlurRadius="1" ShadowDepth="2" />
                                 </Label.Effect>
                             </Label>
-                            <Label Foreground="White" FontSize="18" Content="Litara:" HorizontalContentAlignment="Right" VerticalAlignment="Top" FontWeight="Bold">
+                            <Label Foreground="White" FontSize="20" Content="Litara:" HorizontalContentAlignment="Right" VerticalAlignment="Top" FontWeight="Bold" Margin="0,0,0,5">
                                 <Label.Effect>
                                     <DropShadowEffect BlurRadius="1" ShadowDepth="2" />
                                 </Label.Effect>
                             </Label>
-                            <Label Foreground="White" FontSize="18" Content="Cena:" HorizontalContentAlignment="Right" VerticalAlignment="Top" FontWeight="Bold">
+                            <Label Foreground="White" FontSize="20" Content="Cena:" HorizontalContentAlignment="Right" VerticalAlignment="Top" FontWeight="Bold">
                                 <Label.Effect>
                                     <DropShadowEffect BlurRadius="1" ShadowDepth="2" />
                                 </Label.Effect>
                             </Label>
-                            <Label Foreground="White" FontSize="18" Content="TOTAL:" HorizontalContentAlignment="Right" VerticalAlignment="Top" FontWeight="Bold">
+                            <Label Foreground="White" FontSize="20" Content="TOTAL:" HorizontalContentAlignment="Right" VerticalAlignment="Top" FontWeight="Bold" Margin="0,10,0,0">
                                 <Label.Effect>
                                     <DropShadowEffect BlurRadius="1" ShadowDepth="2" />
                                 </Label.Effect>
                             </Label>
-                            <Label Foreground="White" FontSize="18" Content="Placeno:" HorizontalContentAlignment="Right" VerticalAlignment="Top" FontWeight="Bold">
+                            <Label Foreground="White" FontSize="20" Content="Placeno:" HorizontalContentAlignment="Right" VerticalAlignment="Top" FontWeight="Bold">
                                 <Label.Effect>
                                     <DropShadowEffect BlurRadius="1" ShadowDepth="2" />
                                 </Label.Effect>
                             </Label>
-                            <Label Foreground="White" FontSize="18" Content="Kurs:" HorizontalContentAlignment="Right" VerticalAlignment="Top" FontWeight="Bold">
+                            <Label Foreground="White" FontSize="20" Content="Kurs:" HorizontalContentAlignment="Right" VerticalAlignment="Top" FontWeight="Bold">
                                 <Label.Effect>
                                     <DropShadowEffect BlurRadius="1" ShadowDepth="2" />
                                 </Label.Effect>
@@ -237,19 +238,19 @@
 
                     </WrapPanel>
                     <WrapPanel Orientation="Vertical" Grid.Column="1" Margin="2.569,0,-1.969,-0.2"   >
-                        <Image Source="IMG2.jpg" Height="105" Width="185"/>
+                        <Image Source="IMG2.jpg" Height="108" Width="185"/>
 
-                        <Label Foreground="White" FontSize="18" Content="0.00" HorizontalContentAlignment="Right" VerticalAlignment="Top" FontWeight="Bold">
+                        <Label Foreground="White" FontSize="20" Content="0.00" HorizontalContentAlignment="Right" VerticalAlignment="Top" FontWeight="Bold" Margin="0,5,0,0">
                             <Label.Effect>
                                 <DropShadowEffect BlurRadius="1" ShadowDepth="2" />
                             </Label.Effect>
                         </Label>
-                        <Label Foreground="White" FontSize="18" Content="0.00" HorizontalContentAlignment="Right" VerticalAlignment="Top" FontWeight="Bold">
+                        <Label Foreground="White" FontSize="20" Content="0.00" HorizontalContentAlignment="Right" VerticalAlignment="Top" FontWeight="Bold">
                             <Label.Effect>
                                 <DropShadowEffect BlurRadius="1" ShadowDepth="2" />
                             </Label.Effect>
                         </Label>
-                        <Label Foreground="White" FontSize="18" Content="0.00" HorizontalContentAlignment="Right" VerticalAlignment="Top" FontWeight="Bold">
+                        <Label Foreground="White" FontSize="20" Content="0.00" HorizontalContentAlignment="Right" VerticalAlignment="Top" FontWeight="Bold">
                             <Label.Effect>
                                 <DropShadowEffect BlurRadius="1" ShadowDepth="2" />
                             </Label.Effect>
@@ -303,50 +304,41 @@
                         <Grid >
                             <Label Content="Artikl" Margin="3,-4,107.2,17.6"/>
 
-                            <ComboBox x:Name="cbCities"  Margin="3,18,93.4,3"  HorizontalContentAlignment="Left" HorizontalAlignment="Stretch" ItemsSource="{Binding}" IsTextSearchEnabled="True" IsEditable="True" Background="Yellow">
+                            <ComboBox x:Name="cbArtikliNaStanju" TextSearch.TextPath ="ForSearch"  Margin="3,18,93.4,3" SelectedValuePath="{Binding SifraRobe}"  HorizontalContentAlignment="Left" HorizontalAlignment="Stretch" ItemsSource="{Binding}" IsTextSearchEnabled="True" IsEditable="True" Background="Yellow" BorderBrush="White">
                                 <ComboBox.Resources>
                                     <SolidColorBrush x:Key="{x:Static SystemColors.WindowBrushKey}" Color="Yellow" />
-                                    <SolidColorBrush x:Key="{x:Static SystemColors.HighlightBrushKey}" Color="Blue" />
+                                    <SolidColorBrush x:Key="{x:Static SystemColors.HighlightBrushKey}" Color="Red" />
                                 </ComboBox.Resources>
-                                <TextSearch.Text>Name</TextSearch.Text>
                                 <ComboBox.ItemTemplate>
-
-                                    <DataTemplate>
-                                        <StackPanel Orientation="Horizontal">
-                                            <TextBlock Margin="2" Text="{Binding Name}"/>
-                                            <TextBlock Margin="2" Text="{Binding State}"/>
-                                        </StackPanel>
+                                    <DataTemplate DataType="{x:Type mod:Roba}">
+                                        <TextBlock Background="Yellow" Margin="2" Text="{Binding NazivRobe}"/>
                                     </DataTemplate>
                                 </ComboBox.ItemTemplate>
                                 <ComboBox.ItemContainerStyle>
                                     <Style TargetType="{x:Type ComboBoxItem}">
-                                        <Setter Property="SnapsToDevicePixels" Value="True"/>
-                                        <Setter Property="OverridesDefaultStyle" Value="True"/>
                                         <Setter Property="Background" Value="Yellow"/>
                                         <Setter Property="BorderBrush" Value="Yellow"/>
                                         <Setter Property="Template">
                                             <Setter.Value>
-                                                <ControlTemplate TargetType="{x:Type ComboBoxItem}">
-                                                    <Border x:Name="templateBorder" Padding="2" SnapsToDevicePixels="true">
-                                                        <ContentPresenter>
-                                                            <ContentPresenter.Content>
-                                                                <Grid>
-                                                                    <Grid.ColumnDefinitions>
-                                                                        <ColumnDefinition/>
-                                                                        <ColumnDefinition/>
-                                                                        <ColumnDefinition/>
-                                                                    </Grid.ColumnDefinitions>
-                                                                    <TextBlock Margin="5" Grid.Column="0" Text="{Binding Name}"/>
-                                                                    <TextBlock Margin="5" Grid.Column="1" Text="{Binding State}"/>
-                                                                    <TextBlock Margin="5" Grid.Column="2" Text="{Binding Population}"/>
-                                                                </Grid>
-                                                            </ContentPresenter.Content>
-                                                        </ContentPresenter>
-                                                    </Border>
+                                                <ControlTemplate>
+                                                    <Grid x:Name="gd" TextElement.Foreground="Black">
+                                                        <Grid.ColumnDefinitions>
+                                                            <ColumnDefinition/>
+                                                            <ColumnDefinition/>
+                                                            <ColumnDefinition/>
+                                                        </Grid.ColumnDefinitions>
+                                                        <TextBlock Margin="5" Grid.Column="0" Text="{Binding SifraRobe}"/>
+                                                        <TextBlock Margin="5" Grid.Column="1" Text="{Binding NazivRobe}"/>
+                                                        <TextBlock Margin="5" Grid.Column="2" Text="{Binding VrstaRobe}"/>
+                                                    </Grid>
                                                     <ControlTemplate.Triggers>
-                                                        <Trigger Property="IsHighlighted" Value="True">
-                                                            <Setter Property="Foreground" Value="{x:Static SystemColors.HighlightTextBrush}"/>
-                                                            <Setter TargetName="templateBorder" Property="Background" Value="{x:Static SystemColors.HighlightBrush}"/>
+                                                        <Trigger Property="ComboBoxItem.IsSelected" Value="True">
+                                                            <Setter TargetName="gd"  Property="Background" Value="Blue"></Setter>
+                                                            <Setter TargetName="gd"  Property="TextElement.Foreground" Value="White"></Setter>
+                                                        </Trigger>
+                                                        <Trigger Property="ComboBoxItem.IsMouseOver" Value="True">
+                                                            <Setter TargetName="gd"  Property="Background" Value="Yellow"></Setter>
+                                                            <Setter TargetName="gd"  Property="TextElement.Foreground" Value="Black"></Setter>
                                                         </Trigger>
                                                     </ControlTemplate.Triggers>
                                                 </ControlTemplate>
@@ -356,12 +348,13 @@
                                 </ComboBox.ItemContainerStyle>
                             </ComboBox>
 
+
                             <Label Content="Cena" Margin="268,-4,1.2,17.6"/>
-                            <TextBlock Margin="268,18,1.2,3" Background="Yellow"/>
+                            <TextBlock x:Name="txtCena" Margin="268,18,1.2,3" Background="White"/>
                         </Grid>
                     </Border>
                     <Label Content="Unos:" Margin="120,49,189,0" Foreground="Red" FontWeight="Bold" FontSize="14"/>
-                    <TextBox Margin="174,49,2,3" />
+                    <TextBox Name="txtUnos" Margin="174,49,2,3" FontSize="18"/>
                 </Grid>
             </WrapPanel>
 
@@ -370,22 +363,22 @@
             </Grid>
 
             <WrapPanel HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Orientation="Horizontal" Margin="2,2.4,0,2.4" Grid.ColumnSpan="2" Background="#FFDDDDDD" Grid.Row="3" Grid.Column="1">
-                <Button  Height="45" Width="70" Content="1" BorderBrush="Black" Foreground="White" FontSize="28" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#FF092469"/>
-                <Button  Height="45" Width="70" Content="2" BorderBrush="Black" Foreground="White" FontSize="28" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#FF092469"/>
-                <Button  Height="45" Width="70" Content="3" BorderBrush="Black" Foreground="White" FontSize="28" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#FF092469"/>
-                <Button  Height="45" Width="70" Content="4" BorderBrush="Black" Foreground="White" FontSize="28" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#FF092469"/>
-                <Button  Height="45" Width="70" Content="5" BorderBrush="Black" Foreground="White" FontSize="28" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#FF092469"/>
-                <Button  Height="45" Width="70" Content="6" BorderBrush="Black" Foreground="White" FontSize="28" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#FF092469"/>
-                <Button  Height="45" Width="70" Content="7" BorderBrush="Black" Foreground="White" FontSize="28" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#FF092469"/>
-                <Button  Height="45" Width="70" Content="8" BorderBrush="Black" Foreground="White" FontSize="28" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#FF092469"/>
-                <Button  Height="45" Width="70" Content="9" BorderBrush="Black" Foreground="White" FontSize="28" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#FF092469"/>
-                <Button  Height="45" Width="70" Content="0" BorderBrush="Black" Foreground="White" FontSize="28" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#FF092469"/>
-                <Button  Height="45" Width="70" Content="00" BorderBrush="Black" Foreground="White" FontSize="28" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#FF092469"/>
-                <Button  Height="45" Width="70" Content="." BorderBrush="Black" Foreground="White" FontSize="28" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#FF092469"/>
-                <Button  Height="45" Width="70" Content="C" BorderBrush="Black" Foreground="White" FontSize="28" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#FFC90000"/>
-                <Button  Height="45" Width="70" Visibility="Hidden"  BorderBrush="Black" Foreground="White" FontSize="28" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#FF092469" FontWeight="Bold"/>
-                <Button  Height="45" Width="70" Content="CE" BorderBrush="Black" Foreground="White" FontSize="28" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#FFC40200"/>
-                <Button  Height="52" Width="211" Content="POTVRDA" BorderBrush="Black" Foreground="White" FontSize="20" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="ForestGreen"/>
+                <Button  Height="45" Width="70" Content="1" BorderBrush="Black" Foreground="White" FontSize="24" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#FF092469"/>
+                <Button  Height="45" Width="70" Content="2" BorderBrush="Black" Foreground="White" FontSize="24" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#FF092469"/>
+                <Button  Height="45" Width="70" Content="3" BorderBrush="Black" Foreground="White" FontSize="24" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#FF092469"/>
+                <Button  Height="45" Width="70" Content="4" BorderBrush="Black" Foreground="White" FontSize="24" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#FF092469"/>
+                <Button  Height="45" Width="70" Content="5" BorderBrush="Black" Foreground="White" FontSize="24" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#FF092469"/>
+                <Button  Height="45" Width="70" Content="6" BorderBrush="Black" Foreground="White" FontSize="24" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#FF092469"/>
+                <Button  Height="45" Width="70" Content="7" BorderBrush="Black" Foreground="White" FontSize="24" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#FF092469"/>
+                <Button  Height="45" Width="70" Content="8" BorderBrush="Black" Foreground="White" FontSize="24" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#FF092469"/>
+                <Button  Height="45" Width="70" Content="9" BorderBrush="Black" Foreground="White" FontSize="24" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#FF092469"/>
+                <Button  Height="45" Width="70" Content="0" BorderBrush="Black" Foreground="White" FontSize="24" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#FF092469"/>
+                <Button  Height="45" Width="70" Content="00" BorderBrush="Black" Foreground="White" FontSize="24" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#FF092469"/>
+                <Button  Height="45" Width="70" Content="." BorderBrush="Black" Foreground="White" FontSize="24" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#FF092469"/>
+                <Button  Height="45" Width="70" Content="C" BorderBrush="Black" Foreground="White" FontSize="24" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#FFC90000"/>
+                <Button  Height="45" Width="70" Visibility="Hidden"  BorderBrush="Black" Foreground="White" FontSize="24" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#FF092469" FontWeight="Bold"/>
+                <Button  Height="45" Width="70" Content="CE" BorderBrush="Black" Foreground="White" FontSize="24" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="#FFC40200"/>
+                <Button  Height="52" Width="211" Content="POTVRDA" BorderBrush="Black" Foreground="White" FontSize="24" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="ForestGreen"/>
 
             </WrapPanel>
 
@@ -443,69 +436,129 @@
             <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  Margin="2,2.4" Grid.ColumnSpan="1" Background="#FFA5A5A5" Grid.Row="3" Grid.Column="0">
                 <Label Background="Blue" Content="Broj racuna: 631625" VerticalAlignment="Top" Foreground="White" FontWeight="Bold"/>
 
-                <DataGrid Margin="0,26,0.2,-0.2"  ColumnWidth="*" Background="Gray">
+                <DataGrid Name="dgTransakcija" Margin="0,26,0,0"  ColumnWidth="*" Background="Gray" AutoGenerateColumns="False" IsReadOnly="True">
 
 
                     <DataGrid.Columns>
-                        <DataGridTextColumn  Header="R.Br." Binding="{Binding Date}" Width="55" ClipboardContentBinding="{x:Null}" >
+                        <DataGridTextColumn  Header="R.Br." Binding="{Binding Rb}" Width="55" FontSize="18" ClipboardContentBinding="{x:Null}" >
                             <DataGridTextColumn.ElementStyle>
                                 <Style TargetType="{x:Type TextBlock}">
                                     <Setter Property="Background" Value="Blue"/>
+                                    <Setter Property="Foreground" Value="White"/>
+                                    <Setter Property="Height" Value="30"/>
                                 </Style>
                             </DataGridTextColumn.ElementStyle>
                         </DataGridTextColumn>
-                        <DataGridTextColumn Header="Opis" Binding="{Binding FullName}" ClipboardContentBinding="{x:Null}" >
+                        <DataGridTextColumn Header="Opis" Binding="{Binding NazivRobe}" FontSize="18" ClipboardContentBinding="{x:Null}" >
                             <DataGridTextColumn.ElementStyle>
                                 <Style TargetType="{x:Type TextBlock}">
                                     <Setter Property="Background" Value="Blue"/>
+                                    <Setter Property="Foreground" Value="White"/>
+                                    <Setter Property="Height" Value="30"/>
                                 </Style>
                             </DataGridTextColumn.ElementStyle>
                         </DataGridTextColumn>
-                        <DataGridTextColumn Header="Cena" Binding="{Binding Notes}" Width="120" ClipboardContentBinding="{x:Null}" >
+                        <DataGridTextColumn Header="Cena" Binding="{Binding Cena}" Width="120" FontSize="18" ClipboardContentBinding="{x:Null}" >
                             <DataGridTextColumn.ElementStyle>
                                 <Style TargetType="{x:Type TextBlock}">
                                     <Setter Property="Background" Value="Blue"/>
+                                    <Setter Property="Foreground" Value="White"/>
+                                    <Setter Property="Height" Value="30"/>
                                 </Style>
                             </DataGridTextColumn.ElementStyle>
                         </DataGridTextColumn>
-                        <DataGridTextColumn Header="Kolicina" Binding="{Binding Notes}" Width="100" ClipboardContentBinding="{x:Null}" >
+                        <DataGridTextColumn Header="Kolicina" Binding="{Binding Kolicina}" Width="100" FontSize="18" ClipboardContentBinding="{x:Null}" >
                             <DataGridTextColumn.ElementStyle>
                                 <Style TargetType="{x:Type TextBlock}">
-                                    <Setter Property="Background" Value="Blue"/>
+                                    <Setter Property="Background" Value="#FFCB0101"/>
+                                    <Setter Property="Foreground" Value="White"/>
+                                    <Setter Property="Height" Value="30"/>
                                 </Style>
                             </DataGridTextColumn.ElementStyle>
                         </DataGridTextColumn>
-                        <DataGridTextColumn Header="Vrednost" Binding="{Binding Notes}" Width="90" ClipboardContentBinding="{x:Null}" />
+                        <DataGridTextColumn Header="Vrednost" Binding="{Binding Cena}" Width="90" FontSize="18" ClipboardContentBinding="{x:Null}" >
+                        <DataGridTextColumn.ElementStyle>
+                            <Style TargetType="{x:Type TextBlock}">
+                                <Setter Property="Background" Value="Blue"/>
+                                <Setter Property="Foreground" Value="White"/>
+                                    <Setter Property="Height" Value="30"/>
+                                </Style>
+                        </DataGridTextColumn.ElementStyle>
+                        </DataGridTextColumn>
                     </DataGrid.Columns>
                 </DataGrid>
             </Grid>
 
-            <WrapPanel Grid.Column="5" Grid.RowSpan="4" Background="#FFDDDDDD" Margin="1.8,2,-0.4,2.4" Orientation="Vertical">
-                <Label Content="Benzinska pumpa"/>
-                <ComboBox/>
+            <WrapPanel Grid.Column="5" Grid.RowSpan="4" Background="#FFDDDDDD" Margin="2" Orientation="Vertical">
+                <Label Content="Benzinska pumpa" Margin="0,20,0,0"/>
+                <ComboBox x:Name="cbVrstaPumpe" TextSearch.TextPath ="Naziv"  Margin="3,18,93.4,3" SelectedValuePath="{Binding SifraBS}"  HorizontalContentAlignment="Left" HorizontalAlignment="Stretch" ItemsSource="{Binding}" IsTextSearchEnabled="True" IsEditable="True" Background="Yellow" BorderBrush="White">
+                    <ComboBox.Resources>
+                        <SolidColorBrush x:Key="{x:Static SystemColors.WindowBrushKey}" Color="Yellow" />
+                        <SolidColorBrush x:Key="{x:Static SystemColors.HighlightBrushKey}" Color="Red" />
+                    </ComboBox.Resources>
+                    <ComboBox.ItemTemplate>
+                        <DataTemplate DataType="{x:Type mod:Roba}">
+                            <TextBlock Background="Yellow" Margin="2" Text="{Binding NazivRobe}"/>
+                        </DataTemplate>
+                    </ComboBox.ItemTemplate>
+                    <ComboBox.ItemContainerStyle>
+                        <Style TargetType="{x:Type ComboBoxItem}">
+                            <Setter Property="Background" Value="Yellow"/>
+                            <Setter Property="BorderBrush" Value="Yellow"/>
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate>
+                                        <Grid x:Name="gd" TextElement.Foreground="Black">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition/>
+                                                <ColumnDefinition/>
+                                            </Grid.ColumnDefinitions>
+                                            <TextBlock Margin="5" Grid.Column="0" Text="{Binding SifraBS}"/>
+                                            <TextBlock Margin="5" Grid.Column="1" Text="{Binding Naziv}"/>
+                                        </Grid>
+                                        <ControlTemplate.Triggers>
+                                            <Trigger Property="ComboBoxItem.IsSelected" Value="True">
+                                                <Setter TargetName="gd"  Property="Background" Value="Blue"></Setter>
+                                                <Setter TargetName="gd"  Property="TextElement.Foreground" Value="White"></Setter>
+                                            </Trigger>
+                                            <Trigger Property="ComboBoxItem.IsMouseOver" Value="True">
+                                                <Setter TargetName="gd"  Property="Background" Value="Yellow"></Setter>
+                                                <Setter TargetName="gd"  Property="TextElement.Foreground" Value="Black"></Setter>
+                                            </Trigger>
+                                        </ControlTemplate.Triggers>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </ComboBox.ItemContainerStyle>
+                </ComboBox>
 
-                <Label Content="Datum"/>
-                <DatePickerTextBox/>
+                <Label Content="Datum" Margin="0,20,0,0"/>
+                <DatePickerTextBox Height="25"/>
 
-                <Label Content="Loyality Card ID"/>
-                <TextBox/>
+                <Label Content="Loyality Card ID" Margin="0,20,0,0"/>
+                <TextBox Name="txtLoyality" Height="25" FontSize="18"/>
 
-                <Button Content="SET"/>
+                <Button Content="SET" Margin="0,30,0,0" />
 
-                <Label Content="PREDLOZENI ARTIKLI"/>
-                <DataGrid Margin="0,26,0.2,-0.2"  ColumnWidth="*" Background="Gray">
+                <Label Content="PREDLOZENI ARTIKLI" Margin="0,30,0,0"/>
+                <DataGrid Name="dgPredlozeniArtikli"  ColumnWidth="*" Background="Gray" AutoGenerateColumns="False" IsReadOnly="True">
                     <DataGrid.Columns>
-                        <DataGridTextColumn Header="Naziv" Binding="{Binding Naziv}"  ClipboardContentBinding="{x:Null}" >
+                        <DataGridTextColumn Header="Naziv" Binding="{Binding NazivRobe}" FontSize="18" ClipboardContentBinding="{x:Null}" >
                             <DataGridTextColumn.ElementStyle>
                                 <Style TargetType="{x:Type TextBlock}">
                                     <Setter Property="Background" Value="Yellow"/>
+                                    <Setter Property="Foreground" Value="Black"/>
+                                    <Setter Property="Height" Value="30"/>
                                 </Style>
                             </DataGridTextColumn.ElementStyle>
                         </DataGridTextColumn>
-                        <DataGridTextColumn Header="Vrednost" Binding="{Binding Vrednost}" Width="70" ClipboardContentBinding="{x:Null}" >
+                        <DataGridTextColumn Header="Vrednost" Binding="{Binding Cena}" Width="70" FontSize="18" ClipboardContentBinding="{x:Null}" >
                             <DataGridTextColumn.ElementStyle>
                                 <Style TargetType="{x:Type TextBlock}">
                                     <Setter Property="Background" Value="Yellow"/>
+                                    <Setter Property="Foreground" Value="Black"/>
+                                    <Setter Property="Height" Value="30"/>
                                 </Style>
                             </DataGridTextColumn.ElementStyle>
                         </DataGridTextColumn>

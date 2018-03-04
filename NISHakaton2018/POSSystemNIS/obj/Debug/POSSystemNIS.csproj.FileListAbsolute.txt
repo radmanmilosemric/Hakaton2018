@@ -5,8 +5,6 @@ C:\SOURCECONTROL\Hakaton2018\NISHakaton2018\POSSystemNIS\obj\Debug\POSSystemNIS_
 C:\SOURCECONTROL\Hakaton2018\NISHakaton2018\POSSystemNIS\bin\Debug\POSSystemNIS.exe.config
 C:\SOURCECONTROL\Hakaton2018\NISHakaton2018\POSSystemNIS\bin\Debug\POSSystemNIS.exe
 C:\SOURCECONTROL\Hakaton2018\NISHakaton2018\POSSystemNIS\bin\Debug\POSSystemNIS.pdb
-C:\SOURCECONTROL\Hakaton2018\NISHakaton2018\POSSystemNIS\bin\Debug\Microsoft.EntityFrameworkCore.dll
-C:\SOURCECONTROL\Hakaton2018\NISHakaton2018\POSSystemNIS\bin\Debug\Microsoft.EntityFrameworkCore.xml
 C:\SOURCECONTROL\Hakaton2018\NISHakaton2018\POSSystemNIS\obj\Debug\MainWindow.baml
 C:\SOURCECONTROL\Hakaton2018\NISHakaton2018\POSSystemNIS\obj\Debug\POSSystemNIS.g.resources
 C:\SOURCECONTROL\Hakaton2018\NISHakaton2018\POSSystemNIS\obj\Debug\POSSystemNIS.Properties.Resources.resources
@@ -14,3 +12,9 @@ C:\SOURCECONTROL\Hakaton2018\NISHakaton2018\POSSystemNIS\obj\Debug\POSSystemNIS.
 C:\SOURCECONTROL\Hakaton2018\NISHakaton2018\POSSystemNIS\obj\Debug\POSSystemNIS.csproj.CoreCompileInputs.cache
 C:\SOURCECONTROL\Hakaton2018\NISHakaton2018\POSSystemNIS\obj\Debug\POSSystemNIS.exe
 C:\SOURCECONTROL\Hakaton2018\NISHakaton2018\POSSystemNIS\obj\Debug\POSSystemNIS.pdb
+C:\SOURCECONTROL\Hakaton2018\NISHakaton2018\POSSystemNIS\obj\Debug\POSSystemNIS.csprojResolveAssemblyReference.cache
+C:\SOURCECONTROL\Hakaton2018\NISHakaton2018\POSSystemNIS\bin\Debug\EntityFramework.dll
+C:\SOURCECONTROL\Hakaton2018\NISHakaton2018\POSSystemNIS\bin\Debug\EntityFramework.SqlServer.dll
+C:\SOURCECONTROL\Hakaton2018\NISHakaton2018\POSSystemNIS\bin\Debug\EntityFramework.xml
+C:\SOURCECONTROL\Hakaton2018\NISHakaton2018\POSSystemNIS\bin\Debug\EntityFramework.SqlServer.xml
+C:\SOURCECONTROL\Hakaton2018\NISHakaton2018\POSSystemNIS\obj\Debug\GeneratedInternalTypeHelper.g.cs

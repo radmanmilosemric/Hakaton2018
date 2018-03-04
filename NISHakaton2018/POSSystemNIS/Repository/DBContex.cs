@@ -1,12 +1,14 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿
 using NisHakaton2018.DataModels;
+using System.Data.Entity;
 
 namespace NisHakaton2018.Repository
 {
     public class DBContex : DbContext
     {
-        public DBContex(DbContextOptions<DBContex> options) : base(options)
+        public DBContex() : base("name=DefaultConnection")
         {
+
         }
 
         public DbSet<KatalogBS> KatalogBS { get; set; }
