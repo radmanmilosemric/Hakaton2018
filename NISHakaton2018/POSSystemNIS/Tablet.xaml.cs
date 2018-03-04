@@ -34,8 +34,10 @@ namespace POSSystemNIS
 
             List<PredlozenoTablet> predlozeno = new List<PredlozenoTablet>
             {
-                new PredlozenoTablet{SifraRobe="1",Image= BitmapToImageSource(Properties.Resources.IMG2)},
-                new PredlozenoTablet{SifraRobe="1",Image= BitmapToImageSource(Properties.Resources.IMG2)}
+                new PredlozenoTablet{SifraRobe="1",Image= BitmapToImageSource(Properties.Resources.kolakfaakcija)},
+                new PredlozenoTablet{SifraRobe="1",Image= BitmapToImageSource(Properties.Resources.kolakfaakcija)},
+                 new PredlozenoTablet{SifraRobe="1",Image= BitmapToImageSource(Properties.Resources.kolakfaakcija)},
+                  new PredlozenoTablet{SifraRobe="1",Image= BitmapToImageSource(Properties.Resources.kolakfaakcija)},
             };
             dgTablet.ItemsSource = predlozeno;
         }
