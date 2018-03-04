@@ -476,7 +476,7 @@
                                 </Style>
                             </DataGridTextColumn.ElementStyle>
                         </DataGridTextColumn>
-                        <DataGridTextColumn Header="Vrednost" Binding="{Binding Cena}" Width="90" FontSize="18" ClipboardContentBinding="{x:Null}" >
+                        <DataGridTextColumn Header="Vrednost" Binding="{Binding Cena,StringFormat={}{0:n2}}" Width="90" FontSize="18" ClipboardContentBinding="{x:Null}" >
                         <DataGridTextColumn.ElementStyle>
                             <Style TargetType="{x:Type TextBlock}">
                                 <Setter Property="Background" Value="Blue"/>
@@ -534,14 +534,14 @@
                 </ComboBox>
 
                 <Label Content="Doba dana" Margin="0,20,0,0" FontSize="20"/>
-                <ComboBox x:Name="cbDobaDana" TextSearch.TextPath ="Naziv"   SelectedValuePath="{Binding SifraBS}" Height="25" HorizontalContentAlignment="Left" HorizontalAlignment="Stretch" ItemsSource="{Binding}" IsTextSearchEnabled="True" IsEditable="True" Background="Yellow" BorderBrush="White">
+                <ComboBox x:Name="cbDobaDana" TextSearch.TextPath ="Description"   SelectedValuePath="{Binding SifraBS}" Height="25" HorizontalContentAlignment="Left" HorizontalAlignment="Stretch" ItemsSource="{Binding}" IsTextSearchEnabled="True" IsEditable="True" Background="Yellow" BorderBrush="White">
                     <ComboBox.Resources>
                         <SolidColorBrush x:Key="{x:Static SystemColors.WindowBrushKey}" Color="Yellow" />
                         <SolidColorBrush x:Key="{x:Static SystemColors.HighlightBrushKey}" Color="Red" />
                     </ComboBox.Resources>
                     <ComboBox.ItemTemplate>
-                        <DataTemplate DataType="{x:Type mod:Roba}">
-                            <TextBlock Background="Yellow" Margin="2" Text="{Binding NazivRobe}"/>
+                        <DataTemplate DataType="{x:Type mod:PartOfDay}">
+                            <TextBlock Background="Yellow" Margin="2" Text="{Binding Description}"/>
                         </DataTemplate>
                     </ComboBox.ItemTemplate>
                     <ComboBox.ItemContainerStyle>
@@ -556,8 +556,8 @@
                                                 <ColumnDefinition/>
                                                 <ColumnDefinition/>
                                             </Grid.ColumnDefinitions>
-                                            <TextBlock Margin="5" Grid.Column="0" Text="{Binding SifraBS}"/>
-                                            <TextBlock Margin="5" Grid.Column="1" Text="{Binding Naziv}"/>
+                                            <TextBlock Margin="5" Grid.Column="0" Text="{Binding PartOfDayId}"/>
+                                            <TextBlock Margin="5" Grid.Column="1" Text="{Binding Description}"/>
                                         </Grid>
                                         <ControlTemplate.Triggers>
                                             <Trigger Property="ComboBoxItem.IsSelected" Value="True">
@@ -595,7 +595,7 @@
                                 </Style>
                             </DataGridTextColumn.ElementStyle>
                         </DataGridTextColumn>
-                        <DataGridTextColumn Header="Vrednost" Binding="{Binding Cena}" Width="70" FontSize="18" ClipboardContentBinding="{x:Null}" >
+                        <DataGridTextColumn Header="Vrednost" Binding="{Binding Cena,StringFormat={}{0:n2}}" Width="70" FontSize="18" ClipboardContentBinding="{x:Null}" >
                             <DataGridTextColumn.ElementStyle>
                                 <Style TargetType="{x:Type TextBlock}">
                                     <Setter Property="Background" Value="Yellow"/>

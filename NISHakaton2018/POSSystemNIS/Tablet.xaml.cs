@@ -1,4 +1,5 @@
-﻿using POSSystemNIS.Models;
+﻿using NisHakaton2018.DataModels;
+using POSSystemNIS.Models;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -22,24 +23,19 @@ namespace POSSystemNIS
     /// </summary>
     public partial class Tablet : Window
     {
+        public MainWindow main;
         public List<PredlozenoTablet> PredlozenoTablet
         {
             get { return dgTablet.ItemsSource as List<PredlozenoTablet>; }
             set { dgTablet.ItemsSource = value; }
         }
 
-        public Tablet()
+        public Tablet(MainWindow mainWindow)
         {
             InitializeComponent();
+            main = mainWindow;
 
-            List<PredlozenoTablet> predlozeno = new List<PredlozenoTablet>
-            {
-                new PredlozenoTablet{SifraRobe="1",Image= BitmapToImageSource(Properties.Resources.kolakfaakcija)},
-                new PredlozenoTablet{SifraRobe="1",Image= BitmapToImageSource(Properties.Resources.kolakfaakcija)},
-                 new PredlozenoTablet{SifraRobe="1",Image= BitmapToImageSource(Properties.Resources.kolakfaakcija)},
-                  new PredlozenoTablet{SifraRobe="1",Image= BitmapToImageSource(Properties.Resources.kolakfaakcija)},
-            };
-            dgTablet.ItemsSource = predlozeno;
+            
         }
 
 
@@ -56,6 +52,52 @@ namespace POSSystemNIS
                 bitmapimage.EndInit();
 
                 return bitmapimage;
+            }
+        }
+
+        internal void SetList(List<Roba> predlozeniArtikli)
+        {
+            List<PredlozenoTablet> predlozeno = new List<PredlozenoTablet>();
+
+            if (predlozeniArtikli != null)
+            {
+                foreach (var item in predlozeniArtikli.Take(4))
+                {
+                    predlozeno.Add(new PredlozenoTablet { SifraRobe = item.SifraRobe, Image = BitmapToImageSource(Properties.Resources.kolakfaakcija) });
+                }
+            }
+           
+            dgTablet.ItemsSource = predlozeno;
+        }
+
+        private void dgTablet_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            var item = dgTablet.SelectedItem as PredlozenoTablet;
+            if(item != null)
+            {
+                var artial = main.ArtikliNaStanju.FirstOrDefault(o => o.SifraRobe == item.SifraRobe);
+
+                if (artial == null) return;
+
+                    var artikli = main.Transakcija ?? new List<Roba>();
+
+                if (artikli.FirstOrDefault(o => o.SifraRobe == artial.SifraRobe) != null)
+                {
+                    artikli.FirstOrDefault(o => o.SifraRobe == artial.SifraRobe).Kolicina += 1;
+                }
+                else
+                {
+                    artial.Kolicina = 1;
+                    artial.Rb = artikli.Count() + 1;
+                    artikli.Add(artial);
+                }
+
+                main.Transakcija = artikli.OrderBy(o => o.Rb).ToList();
+
+                main.txtCena.Text = "";
+                main.txtUnos.Text = "";
+                main.cbArtikliNaStanju.SelectedValue = null;
+                main.cbArtikliNaStanju.Focus();
             }
         }
     }
