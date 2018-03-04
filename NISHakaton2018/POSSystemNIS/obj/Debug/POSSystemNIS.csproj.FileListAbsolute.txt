@@ -12,7 +12,6 @@ C:\SOURCECONTROL\Hakaton2018\NISHakaton2018\POSSystemNIS\obj\Debug\POSSystemNIS.
 C:\SOURCECONTROL\Hakaton2018\NISHakaton2018\POSSystemNIS\obj\Debug\POSSystemNIS.csproj.CoreCompileInputs.cache
 C:\SOURCECONTROL\Hakaton2018\NISHakaton2018\POSSystemNIS\obj\Debug\POSSystemNIS.exe
 C:\SOURCECONTROL\Hakaton2018\NISHakaton2018\POSSystemNIS\obj\Debug\POSSystemNIS.pdb
-C:\SOURCECONTROL\Hakaton2018\NISHakaton2018\POSSystemNIS\obj\Debug\POSSystemNIS.csprojResolveAssemblyReference.cache
 C:\SOURCECONTROL\Hakaton2018\NISHakaton2018\POSSystemNIS\bin\Debug\EntityFramework.dll
 C:\SOURCECONTROL\Hakaton2018\NISHakaton2018\POSSystemNIS\bin\Debug\EntityFramework.SqlServer.dll
 C:\SOURCECONTROL\Hakaton2018\NISHakaton2018\POSSystemNIS\bin\Debug\EntityFramework.xml
@@ -40,3 +39,5 @@ C:\Projects\Nis2018\Hakaton2018\NISHakaton2018\POSSystemNIS\obj\Debug\POSSystemN
 C:\Projects\Nis2018\Hakaton2018\NISHakaton2018\POSSystemNIS\obj\Debug\POSSystemNIS.pdb
 C:\Projects\Nis2018\Hakaton2018\NISHakaton2018\POSSystemNIS\obj\Debug\Tablet.g.cs
 C:\Projects\Nis2018\Hakaton2018\NISHakaton2018\POSSystemNIS\obj\Debug\Tablet.baml
+C:\SOURCECONTROL\Hakaton2018\NISHakaton2018\POSSystemNIS\obj\Debug\Tablet.g.cs
+C:\SOURCECONTROL\Hakaton2018\NISHakaton2018\POSSystemNIS\obj\Debug\Tablet.baml

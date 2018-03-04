@@ -61,7 +61,7 @@ namespace POSSystemNIS
             {
                 return new List<PartOfDay>() { new PartOfDay() { PartOfDayId = 1, Description = "00h - 06h" },
                  new PartOfDay() { PartOfDayId = 2, Description = "06h - 09h" },
-                 new PartOfDay() { PartOfDayId = 3, Description = "06h - 16h" },
+                 new PartOfDay() { PartOfDayId = 3, Description = "09h - 16h" },
                  new PartOfDay() { PartOfDayId = 4, Description = "16h - 00h" }};
             }
         }
@@ -151,12 +151,14 @@ namespace POSSystemNIS
         private void btnSet_Click(object sender, RoutedEventArgs e)
         {
             Transakcija = new List<Roba>();
+            PredlozeniArtikli = new List<Roba>();
             if (TabletWindow == null)
             {
                 TabletWindow = new Tablet(this);
                 TabletWindow.Show();
                 TabletWindow.SetList(PredlozeniArtikli);
             }
+            TabletWindow.SetList(PredlozeniArtikli);
         }
 
         private void cbArtikliNaStanju_SelectionChanged(object sender, SelectionChangedEventArgs e)

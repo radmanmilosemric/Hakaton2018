@@ -63,7 +63,26 @@ namespace POSSystemNIS
             {
                 foreach (var item in predlozeniArtikli.Take(4))
                 {
-                    predlozeno.Add(new PredlozenoTablet { SifraRobe = item.SifraRobe, Image = BitmapToImageSource(Properties.Resources.kolakfaakcija) });
+                    var img = BitmapToImageSource(Properties.Resources.generic);
+
+                    if(item.NazivRobe.Contains("COLA"))
+                    {
+                        img = BitmapToImageSource(Properties.Resources.kolakfaakcija);
+                    }
+                    if (item.NazivRobe.Contains("KIT"))
+                    {
+                        img = BitmapToImageSource(Properties.Resources.kolakitkatakcija);
+                    }
+                    if (item.NazivRobe.Contains("ROSA") || item.NazivRobe.Contains("K.MIL") || item.NazivRobe.Contains("AQ"))
+                    {
+                        img = BitmapToImageSource(Properties.Resources.kolavodaakcija);
+                    }
+
+                    if (item.NazivRobe.Contains("ILLY"))
+                    {
+                        img = BitmapToImageSource(Properties.Resources.kolakfaakcija);
+                    }
+                    predlozeno.Add(new PredlozenoTablet { SifraRobe = item.SifraRobe, Image = img });
                 }
             }
            

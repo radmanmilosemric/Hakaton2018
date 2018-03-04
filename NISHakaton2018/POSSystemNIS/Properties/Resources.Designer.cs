@@ -73,6 +73,16 @@ namespace POSSystemNIS.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap generic {
+            get {
+                object obj = ResourceManager.GetObject("generic", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap IMG_f88e65521c2d7b76b28e2d9cda029b9f_V {
             get {
                 object obj = ResourceManager.GetObject("IMG_f88e65521c2d7b76b28e2d9cda029b9f_V", resourceCulture);
@@ -96,6 +106,26 @@ namespace POSSystemNIS.Properties {
         internal static System.Drawing.Bitmap kolakfaakcija {
             get {
                 object obj = ResourceManager.GetObject("kolakfaakcija", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap kolakitkatakcija {
+            get {
+                object obj = ResourceManager.GetObject("kolakitkatakcija", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap kolavodaakcija {
+            get {
+                object obj = ResourceManager.GetObject("kolavodaakcija", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
