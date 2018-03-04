@@ -1,10 +1,9 @@
-﻿
-
-
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace NisHakaton2018.DataModels
 {
+    [Table("Roba")]
     public class Roba
     {
         [Key]
@@ -14,10 +13,12 @@ namespace NisHakaton2018.DataModels
         public string GrupaRobe { get; set; }
         public string HirearhijaRobe { get; set; }
 
-        public double Cena { get; set; }
+        public decimal Cena { get; set; }
+        [NotMapped]
         public int Kolicina { get; set; }
+        [NotMapped]
         public int Rb { get; set; }
-
+        [NotMapped]
         public string ForSearch
         {
             get

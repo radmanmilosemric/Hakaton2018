@@ -15,6 +15,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using NisHakaton2018.DataModels;
 using NisHakaton2018.Repository;
+using POSSystemNIS.Models;
 
 namespace POSSystemNIS
 {
@@ -60,6 +61,8 @@ namespace POSSystemNIS
             set;
         }
 
+        public List<PairedItem> PairedItems { get; set; }
+        public List<KupacProizvod> KupacProizvodList { get; set; }
         public Tablet TabletWindow { get; set; }
 
         #endregion
@@ -67,32 +70,22 @@ namespace POSSystemNIS
         public MainWindow()
         {
             InitializeComponent();
-            //123
 
-            var artikli = new List<Roba>
+            try
             {
-                new Roba
+                using (var context = new DBContex())
                 {
-                    SifraRobe = "1",
-                    NazivRobe = "Naziv",
-                    GrupaRobe = "Grupa",
-                    VrstaRobe = "Vrsta",
-                    Cena = 10
+                    ArtikliNaStanju = context.Roba.ToList();
+                    VrstaPumpe = context.VrstaBS.ToList();
+                    PairedItems = context.PairedItems.ToList();
+                    KupacProizvodList = context.KupacProizvodList.ToList();
                 }
-            };
-
-            var pumpe = new List<VrstaBS>
-            {
-                new VrstaBS{SifraBS = "1",Naziv= "Naziv"}
-            };
-
-            Transakcija = PredlozeniArtikli = ArtikliNaStanju = artikli;
-            VrstaPumpe = pumpe;
-            
-            //using (var context = new DBContex())
-            //{
-            //    roba = context.Roba.ToList();
-            //}
+            }
+            catch (Exception ex)
+            { 
+                System.Windows.MessageBox.Show(ex.GetBaseException().ToString());
+                throw;
+            }
         }
 
         private void btnSet_Click(object sender, RoutedEventArgs e)
