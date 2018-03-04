@@ -49,6 +49,17 @@ namespace POSSystemNIS
             set { dgPredlozeniArtikli.ItemsSource = value; }
         }
 
+        public List<PartOfDay> PartOfDayList
+        {
+            get
+            {
+                return new List<PartOfDay>() { new PartOfDay() { PartOfDayId = 1, Description = "00h - 06h" },
+                 new PartOfDay() { PartOfDayId = 1, Description = "06h - 09h" },
+                 new PartOfDay() { PartOfDayId = 1, Description = "06h - 16h" },
+                 new PartOfDay() { PartOfDayId = 1, Description = "16h - 00h" }};
+            }
+        }
+
         public Roba SelectedArtikal
         {
             get;
@@ -77,15 +88,57 @@ namespace POSSystemNIS
                 {
                     ArtikliNaStanju = context.Roba.ToList();
                     VrstaPumpe = context.VrstaBS.ToList();
-                    PairedItems = context.PairedItems.ToList();
-                    KupacProizvodList = context.KupacProizvodList.ToList();
+                    PairedItems = context.PairedItems.Where(x => x.RankNo < 4).ToList();
+                    KupacProizvodList = context.KupacProizvodList.OrderByDescending(x => x.BrojKupovina).ToList();
+                    var top6 = GetTop("82223", "7825681598797037", 1, "BS1", false);
                 }
             }
             catch (Exception ex)
-            { 
+            {
                 System.Windows.MessageBox.Show(ex.GetBaseException().ToString());
                 throw;
             }
+        }
+
+        private object GetTop(string soldItem, string loyaltyKartica, int partOfDay, string sifraBS, bool isWeekend)
+        {
+            var finalList = new List<Roba>();
+            var piList = PairedItems.Where(x => x.TstSifraRobe == soldItem && x.PartOfDay == partOfDay && x.SifraBS == sifraBS && x.IsWeekend == isWeekend).ToList();
+            if (string.IsNullOrWhiteSpace(loyaltyKartica))
+            {
+                foreach (var item in piList)
+                {
+                    finalList.Add(ArtikliNaStanju.First(x => x.SifraRobe == item.TndSifraRobe));
+                }
+            }
+            else
+            {
+                var kpList = KupacProizvodList.Where(x => x.LoyaltyKartica == loyaltyKartica).OrderByDescending(x => x.BrojKupovina).Take(6).ToList();
+                foreach (var item in piList)
+                {
+                    if (kpList.Any(x => x.SifraRobe == item.TndSifraRobe))
+                    {
+                        finalList.Add(ArtikliNaStanju.First(x => x.SifraRobe == item.TndSifraRobe));
+                    }
+                }
+                foreach (var item in kpList)
+                {
+                    if (!finalList.Any(x => x.SifraRobe == item.SifraRobe))
+                    {
+                        finalList.Add(ArtikliNaStanju.First(x => x.SifraRobe == item.SifraRobe));
+                    }
+                }
+                foreach (var item in piList)
+                {
+                    if (!finalList.Any(x => x.SifraRobe == item.TndSifraRobe))
+                    {
+                        finalList.Add(ArtikliNaStanju.First(x => x.SifraRobe == item.TndSifraRobe));
+                    }
+                }
+
+            }
+
+            return finalList.Take(6).ToList();
         }
 
         private void btnSet_Click(object sender, RoutedEventArgs e)
