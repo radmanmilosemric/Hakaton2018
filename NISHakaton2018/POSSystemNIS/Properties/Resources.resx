@@ -127,4 +127,7 @@
   <data name="IMG_f88e65521c2d7b76b28e2d9cda029b9f_V" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\IMG-f88e65521c2d7b76b28e2d9cda029b9f-V.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="kolakfaakcija" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\kolakfaakcija.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

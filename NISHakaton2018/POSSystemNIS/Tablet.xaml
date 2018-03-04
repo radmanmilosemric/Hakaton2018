@@ -12,12 +12,12 @@
                 <ImageBrush ImageSource="apple_mk9n2ll_a_128gb_ipad_mini_4_1185478.jpg" Stretch="Uniform"/>
             </Grid.Background>
 
-            <DataGrid Name="dgTablet" Background="#FF00BDD0" BorderBrush="{x:Null}" Margin="27,56,29,59" ColumnWidth="*" HeadersVisibility="None"  AutoGenerateColumns="False" IsReadOnly="True" >
+            <DataGrid Name="dgTablet" Background="#FF00BDD0" BorderBrush="{x:Null}" Margin="27,56,29,59" ColumnWidth="*" HeadersVisibility="None"  AutoGenerateColumns="False" IsReadOnly="True" ScrollViewer.CanContentScroll="False" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Disabled" >
                 <DataGrid.Columns>
                     <DataGridTemplateColumn>
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>
-                                <Image Source="{Binding Image}" />
+                                <Image Source="{Binding Image}" Stretch="Fill"  />
                             </DataTemplate>
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>

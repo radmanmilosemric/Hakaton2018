@@ -96,5 +96,66 @@ namespace POSSystemNIS
                 TabletWindow.Show();
             }
         }
+
+        private void cbArtikliNaStanju_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            //var izabran = cbArtikliNaStanju.SelectedValue as Roba;
+
+            //if(izabran != null)
+            //{
+            //    SelectedArtikal = izabran;
+            //    txtCena.Text = izabran.Cena.ToString("n2");
+            //    txtUnos.Text = izabran.Cena.ToString("n2");
+            //    txtUnos.Focus();
+            //}
+        }
+
+        private void txtUnos_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                if (SelectedArtikal != null)
+                {
+                    var artikli = Transakcija ?? new List<Roba>();
+
+                    if (artikli.FirstOrDefault(o => o.SifraRobe == SelectedArtikal.SifraRobe) != null)
+                    {
+                        artikli.FirstOrDefault(o => o.SifraRobe == SelectedArtikal.SifraRobe).Kolicina += 1;
+                    }
+                    else
+                    {
+                        SelectedArtikal.Kolicina = 1;
+                        SelectedArtikal.Rb = artikli.Count() + 1;
+                        artikli.Add(SelectedArtikal);
+
+                        
+                    }
+
+                    Transakcija = artikli.OrderBy(o => o.Rb).ToList();
+
+                    SelectedArtikal = null;
+                    txtCena.Text = "";
+                    txtUnos.Text = "";
+                    cbArtikliNaStanju.SelectedValue = null;
+                    cbArtikliNaStanju.Focus();
+                }
+            }
+        }
+
+        private void cbArtikliNaStanju_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                var izabran = cbArtikliNaStanju.SelectedValue as Roba;
+
+                if (izabran != null)
+                {
+                    SelectedArtikal = izabran;
+                    txtCena.Text = izabran.Cena.ToString("n2");
+                    txtUnos.Text = izabran.Cena.ToString("n2");
+                    txtUnos.Focus();
+                }
+            }
+        }
     }
 }

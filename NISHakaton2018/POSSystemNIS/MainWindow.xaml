@@ -304,7 +304,7 @@
                         <Grid >
                             <Label Content="Artikl" Margin="3,-4,107.2,17.6"/>
 
-                            <ComboBox x:Name="cbArtikliNaStanju" TextSearch.TextPath ="ForSearch"  Margin="3,18,93.4,3" SelectedValuePath="{Binding SifraRobe}"  HorizontalContentAlignment="Left" HorizontalAlignment="Stretch" ItemsSource="{Binding}" IsTextSearchEnabled="True" IsEditable="True" Background="Yellow" BorderBrush="White">
+                            <ComboBox x:Name="cbArtikliNaStanju" TextSearch.TextPath ="NazivRobe"  Margin="3,18,93.4,3" SelectedValuePath="{Binding SifraRobe}"  HorizontalContentAlignment="Left" HorizontalAlignment="Stretch" ItemsSource="{Binding}" IsTextSearchEnabled="True" IsEditable="True" Background="Yellow" BorderBrush="White" SelectionChanged="cbArtikliNaStanju_SelectionChanged" KeyDown="cbArtikliNaStanju_KeyDown">
                                 <ComboBox.Resources>
                                     <SolidColorBrush x:Key="{x:Static SystemColors.WindowBrushKey}" Color="Yellow" />
                                     <SolidColorBrush x:Key="{x:Static SystemColors.HighlightBrushKey}" Color="Red" />
@@ -354,7 +354,7 @@
                         </Grid>
                     </Border>
                     <Label Content="Unos:" Margin="120,49,189,0" Foreground="Red" FontWeight="Bold" FontSize="14"/>
-                    <TextBox Name="txtUnos" Margin="174,49,2,3" FontSize="18"/>
+                    <TextBox Name="txtUnos" Margin="174,49,2,3" FontSize="18" KeyDown="txtUnos_KeyDown"/>
                 </Grid>
             </WrapPanel>
 
@@ -490,8 +490,8 @@
             </Grid>
 
             <WrapPanel Grid.Column="5" Grid.RowSpan="4" Background="#FFDDDDDD" Margin="2" Orientation="Vertical">
-                <Label Content="Benzinska pumpa" Margin="0,20,0,0"/>
-                <ComboBox x:Name="cbVrstaPumpe" TextSearch.TextPath ="Naziv"  Margin="3,18,93.4,3" SelectedValuePath="{Binding SifraBS}"  HorizontalContentAlignment="Left" HorizontalAlignment="Stretch" ItemsSource="{Binding}" IsTextSearchEnabled="True" IsEditable="True" Background="Yellow" BorderBrush="White">
+                <Label Content="Benzinska pumpa" Margin="0,20,0,0" FontSize="20"/>
+                <ComboBox x:Name="cbVrstaPumpe" TextSearch.TextPath ="Naziv"   SelectedValuePath="{Binding SifraBS}" Height="25" HorizontalContentAlignment="Left" HorizontalAlignment="Stretch" ItemsSource="{Binding}" IsTextSearchEnabled="True" IsEditable="True" Background="Yellow" BorderBrush="White">
                     <ComboBox.Resources>
                         <SolidColorBrush x:Key="{x:Static SystemColors.WindowBrushKey}" Color="Yellow" />
                         <SolidColorBrush x:Key="{x:Static SystemColors.HighlightBrushKey}" Color="Red" />
@@ -533,15 +533,57 @@
                     </ComboBox.ItemContainerStyle>
                 </ComboBox>
 
-                <Label Content="Datum" Margin="0,20,0,0"/>
-                <DatePickerTextBox Height="25"/>
+                <Label Content="Doba dana" Margin="0,20,0,0" FontSize="20"/>
+                <ComboBox x:Name="cbDobaDana" TextSearch.TextPath ="Naziv"   SelectedValuePath="{Binding SifraBS}" Height="25" HorizontalContentAlignment="Left" HorizontalAlignment="Stretch" ItemsSource="{Binding}" IsTextSearchEnabled="True" IsEditable="True" Background="Yellow" BorderBrush="White">
+                    <ComboBox.Resources>
+                        <SolidColorBrush x:Key="{x:Static SystemColors.WindowBrushKey}" Color="Yellow" />
+                        <SolidColorBrush x:Key="{x:Static SystemColors.HighlightBrushKey}" Color="Red" />
+                    </ComboBox.Resources>
+                    <ComboBox.ItemTemplate>
+                        <DataTemplate DataType="{x:Type mod:Roba}">
+                            <TextBlock Background="Yellow" Margin="2" Text="{Binding NazivRobe}"/>
+                        </DataTemplate>
+                    </ComboBox.ItemTemplate>
+                    <ComboBox.ItemContainerStyle>
+                        <Style TargetType="{x:Type ComboBoxItem}">
+                            <Setter Property="Background" Value="Yellow"/>
+                            <Setter Property="BorderBrush" Value="Yellow"/>
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate>
+                                        <Grid x:Name="gd" TextElement.Foreground="Black">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition/>
+                                                <ColumnDefinition/>
+                                            </Grid.ColumnDefinitions>
+                                            <TextBlock Margin="5" Grid.Column="0" Text="{Binding SifraBS}"/>
+                                            <TextBlock Margin="5" Grid.Column="1" Text="{Binding Naziv}"/>
+                                        </Grid>
+                                        <ControlTemplate.Triggers>
+                                            <Trigger Property="ComboBoxItem.IsSelected" Value="True">
+                                                <Setter TargetName="gd"  Property="Background" Value="Blue"></Setter>
+                                                <Setter TargetName="gd"  Property="TextElement.Foreground" Value="White"></Setter>
+                                            </Trigger>
+                                            <Trigger Property="ComboBoxItem.IsMouseOver" Value="True">
+                                                <Setter TargetName="gd"  Property="Background" Value="Yellow"></Setter>
+                                                <Setter TargetName="gd"  Property="TextElement.Foreground" Value="Black"></Setter>
+                                            </Trigger>
+                                        </ControlTemplate.Triggers>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </ComboBox.ItemContainerStyle>
+                </ComboBox>
 
-                <Label Content="Loyality Card ID" Margin="0,20,0,0"/>
-                <TextBox Name="txtLoyality" Height="25" FontSize="18"/>
+                <CheckBox Name="chkVikend" FontSize="20" Content="Vikend" Height="25" Margin="5,10,0,0"/>
+
+                <Label Content="Loyality Card ID" Margin="0,20,0,0" FontSize="20"/>
+                <TextBox Name="txtLoyality" FontSize="18" Height="25" />
 
                 <Button Name="btnSet"  Height="30" Margin="0,30,0,0" Content="SET" BorderBrush="Black" Foreground="White" FontSize="20" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="ForestGreen" Click="btnSet_Click"/>
 
-                <Label Content="PREDLOZENI ARTIKLI" Margin="0,30,0,0"/>
+                <Label Content="PREDLOZENI ARTIKLI" FontSize="18" Margin="0,30,0,0"/>
                 <DataGrid Name="dgPredlozeniArtikli"  ColumnWidth="*" Background="Gray" AutoGenerateColumns="False" IsReadOnly="True" >
                     <DataGrid.Columns>
                         <DataGridTextColumn Header="Naziv" Binding="{Binding NazivRobe}" FontSize="18" ClipboardContentBinding="{x:Null}" >

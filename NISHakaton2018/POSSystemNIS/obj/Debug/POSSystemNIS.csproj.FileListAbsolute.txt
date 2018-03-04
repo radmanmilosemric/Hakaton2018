@@ -38,3 +38,5 @@ C:\Projects\Nis2018\Hakaton2018\NISHakaton2018\POSSystemNIS\obj\Debug\POSSystemN
 C:\Projects\Nis2018\Hakaton2018\NISHakaton2018\POSSystemNIS\obj\Debug\POSSystemNIS.csproj.CoreCompileInputs.cache
 C:\Projects\Nis2018\Hakaton2018\NISHakaton2018\POSSystemNIS\obj\Debug\POSSystemNIS.exe
 C:\Projects\Nis2018\Hakaton2018\NISHakaton2018\POSSystemNIS\obj\Debug\POSSystemNIS.pdb
+C:\SOURCECONTROL\Hakaton2018\NISHakaton2018\POSSystemNIS\obj\Debug\Tablet.g.cs
+C:\SOURCECONTROL\Hakaton2018\NISHakaton2018\POSSystemNIS\obj\Debug\Tablet.baml
