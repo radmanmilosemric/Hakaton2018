@@ -130,14 +130,14 @@ namespace POSSystemNIS
                 }
                 foreach (var item in kpList)
                 {
-                    if (!finalList.Any(x => x.SifraRobe == item.SifraRobe))
+                    if (!finalList.Any(x => x.SifraRobe == item.SifraRobe) && item.SifraRobe != soldItem)
                     {
                         finalList.Add(ArtikliNaStanju.First(x => x.SifraRobe == item.SifraRobe));
                     }
                 }
                 foreach (var item in piList)
                 {
-                    if (!finalList.Any(x => x.SifraRobe == item.TndSifraRobe))
+                    if (!finalList.Any(x => x.SifraRobe == item.TndSifraRobe) && item.TstNazivRobe != soldItem)
                     {
                         finalList.Add(ArtikliNaStanju.First(x => x.SifraRobe == item.TndSifraRobe));
                     }
