@@ -63,6 +63,16 @@ namespace POSSystemNIS.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap apple_mk9n2ll_a_128gb_ipad_mini_4_1185478 {
+            get {
+                object obj = ResourceManager.GetObject("apple_mk9n2ll_a_128gb_ipad_mini_4_1185478", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap IMG_f88e65521c2d7b76b28e2d9cda029b9f_V {
             get {
                 object obj = ResourceManager.GetObject("IMG_f88e65521c2d7b76b28e2d9cda029b9f_V", resourceCulture);

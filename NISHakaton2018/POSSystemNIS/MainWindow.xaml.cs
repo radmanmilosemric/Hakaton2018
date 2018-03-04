@@ -74,6 +74,8 @@ namespace POSSystemNIS
 
         public List<PairedItem> PairedItems { get; set; }
         public List<KupacProizvod> KupacProizvodList { get; set; }
+        public Tablet TabletWindow { get; set; }
+
         #endregion
 
         public MainWindow()
@@ -137,6 +139,15 @@ namespace POSSystemNIS
             }
 
             return finalList.Take(6).ToList();
+        }
+
+        private void btnSet_Click(object sender, RoutedEventArgs e)
+        {
+            if (TabletWindow == null)
+            {
+                TabletWindow = new Tablet();
+                TabletWindow.Show();
+            }
         }
     }
 }
