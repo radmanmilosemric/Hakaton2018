@@ -49,14 +49,20 @@ namespace POSSystemNIS
             set { dgPredlozeniArtikli.ItemsSource = value; }
         }
 
+        public List<PartOfDay> DobaDana
+        {
+            get { return cbDobaDana.ItemsSource as List<PartOfDay>; }
+            set { cbDobaDana.ItemsSource = value; }
+        }
+
         public List<PartOfDay> PartOfDayList
         {
             get
             {
                 return new List<PartOfDay>() { new PartOfDay() { PartOfDayId = 1, Description = "00h - 06h" },
-                 new PartOfDay() { PartOfDayId = 1, Description = "06h - 09h" },
-                 new PartOfDay() { PartOfDayId = 1, Description = "06h - 16h" },
-                 new PartOfDay() { PartOfDayId = 1, Description = "16h - 00h" }};
+                 new PartOfDay() { PartOfDayId = 2, Description = "06h - 09h" },
+                 new PartOfDay() { PartOfDayId = 3, Description = "06h - 16h" },
+                 new PartOfDay() { PartOfDayId = 4, Description = "16h - 00h" }};
             }
         }
 
@@ -84,13 +90,14 @@ namespace POSSystemNIS
 
             try
             {
+                DobaDana = PartOfDayList;
                 using (var context = new DBContex())
                 {
                     ArtikliNaStanju = context.Roba.ToList();
                     VrstaPumpe = context.VrstaBS.ToList();
-                    PairedItems = context.PairedItems.Where(x => x.RankNo < 4).ToList();
+                    PairedItems = context.PairedItems.Where(x => x.RankNo < 5).ToList();
                     KupacProizvodList = context.KupacProizvodList.OrderByDescending(x => x.BrojKupovina).ToList();
-                    var top6 = GetTop("82223", "7825681598797037", 1, "BS1", false);
+                    //PredlozeniArtikli = GetTop("82223", "7825681598797037", 1, "BS1", false);
                 }
             }
             catch (Exception ex)
@@ -100,7 +107,7 @@ namespace POSSystemNIS
             }
         }
 
-        private object GetTop(string soldItem, string loyaltyKartica, int partOfDay, string sifraBS, bool isWeekend)
+        private List<Roba> GetTop(string soldItem, string loyaltyKartica, int partOfDay, string sifraBS, bool isWeekend)
         {
             var finalList = new List<Roba>();
             var piList = PairedItems.Where(x => x.TstSifraRobe == soldItem && x.PartOfDay == partOfDay && x.SifraBS == sifraBS && x.IsWeekend == isWeekend).ToList();
@@ -143,10 +150,12 @@ namespace POSSystemNIS
 
         private void btnSet_Click(object sender, RoutedEventArgs e)
         {
+            Transakcija = new List<Roba>();
             if (TabletWindow == null)
             {
-                TabletWindow = new Tablet();
+                TabletWindow = new Tablet(this);
                 TabletWindow.Show();
+                TabletWindow.SetList(PredlozeniArtikli);
             }
         }
 
@@ -185,6 +194,24 @@ namespace POSSystemNIS
                     }
 
                     Transakcija = artikli.OrderBy(o => o.Rb).ToList();
+
+                    if(SelectedArtikal != null)
+                    {
+                        var part = cbDobaDana.SelectedValue as PartOfDay;
+                        var bp = cbVrstaPumpe.SelectedValue as VrstaBS;
+                        var predlozeno = GetTop(SelectedArtikal.SifraRobe, txtLoyality.Text, part.PartOfDayId, bp.SifraBS, chkVikend.IsChecked ?? false).ToList();
+
+                        PredlozeniArtikli = predlozeno;
+
+                        if (TabletWindow == null)
+                        {
+                            TabletWindow = new Tablet(this);
+                            TabletWindow.Show();
+                            
+                        }
+                        TabletWindow.SetList(PredlozeniArtikli);
+                    }
+                    
 
                     SelectedArtikal = null;
                     txtCena.Text = "";

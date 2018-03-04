@@ -5,14 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:POSSystemNIS"
         mc:Ignorable="d"
-        Title="Tablet" Height="600" Width="400">
+        Title="Tablet" Height="800" Width="500">
     <Viewbox Stretch="Uniform">
         <Grid Height="570" Width="394">
             <Grid.Background>
                 <ImageBrush ImageSource="apple_mk9n2ll_a_128gb_ipad_mini_4_1185478.jpg" Stretch="Uniform"/>
             </Grid.Background>
 
-            <DataGrid Name="dgTablet" Background="#FF00BDD0" BorderBrush="{x:Null}" Margin="27,56,29,59" ColumnWidth="*" HeadersVisibility="None"  AutoGenerateColumns="False" IsReadOnly="True" ScrollViewer.CanContentScroll="False" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Disabled" >
+            <DataGrid Name="dgTablet" Background="#FF00BDD0" MouseDoubleClick="dgTablet_MouseDoubleClick" BorderBrush="{x:Null}" Margin="27,56,29,59" ColumnWidth="*" HeadersVisibility="None"  AutoGenerateColumns="False" IsReadOnly="True" ScrollViewer.CanContentScroll="False" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Disabled" >
                 <DataGrid.Columns>
                     <DataGridTemplateColumn>
                         <DataGridTemplateColumn.CellTemplate>

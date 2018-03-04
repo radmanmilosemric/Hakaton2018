@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace POSSystemNIS.Models
+namespace NisHakaton2018.DataModels
 {
     public class PartOfDay
     {
