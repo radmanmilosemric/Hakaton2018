@@ -1,0 +1,63 @@
+﻿@model NisHakaton2018.Models.POSViewModel
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<h4>POSViewModel</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Index">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                <div class="col-lg-6">
+                    @Html.DropDownListFor(x =>
+x.ArtikliNaStanju,
+(IEnumerable<SelectListItem>)ViewBag.AllStockList,
+new
+{
+ @class = "form-control selectpicker",
+ @Value = @Model.IzabranArtikal
+})
+                </div>
+                <div class="col-sm-4">
+                    @Html.EditorFor(model => model.Quantity)
+                </div>
+                <div class="col-sm-4">
+                    <input type="button" value="Add" class="btn btn-default" onclick="Add()" />
+                </div>
+            </div>
+
+            <div class="form-group">
+
+
+
+             </div>
+                <div class="form-group">
+                    <input type="submit" value="Save" class="btn btn-default" />
+                </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+
+<script>
+    $(document).ready(function () {
+        $('.selectpicker').selectpicker({
+            liveSearch: true,
+            showSubtext: true
+        });
+    });
+</script>

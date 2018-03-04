@@ -1,8 +1,11 @@
 ﻿
+using System.ComponentModel.DataAnnotations;
+
 namespace NisHakaton2018.DataModels
 {
     public class KatalogBS
     {
+        [Key]
         public string SifraBS { get; set; }
         public string Naziv { get; set; }
         public string Brend { get; set; }

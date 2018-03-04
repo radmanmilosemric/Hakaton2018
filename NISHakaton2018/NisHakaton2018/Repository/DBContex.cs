@@ -1,9 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using NisHakaton2018.DataModels;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace NisHakaton2018.Repository
 {
@@ -14,7 +10,10 @@ namespace NisHakaton2018.Repository
         }
 
         public DbSet<KatalogBS> KatalogBS { get; set; }
-
-        public DbSet<Transakcija> Transakcije { get; set; }
+        public DbSet<Transactions> Transakcije { get; set; }
+        public DbSet<GrupaRobe> GrupaRobe { get; set; }
+        public DbSet<Roba> Roba { get; set; }
+        public DbSet<HijerarhijaRobe> HijerarhijaRobe { get; set; }
+        public DbSet<VrstaBS> VrstaBS { get; set; }
     }
 }

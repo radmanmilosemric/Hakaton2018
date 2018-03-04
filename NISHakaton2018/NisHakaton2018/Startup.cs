@@ -38,6 +38,9 @@ namespace NisHakaton2018
 
             services.AddDbContext<DBContex>(
                 builder => builder.UseSqlServer(connectionString, options => options.MigrationsAssembly(migrationsAssembly)));
+
+            services.AddScoped<RepoKatalogBs>();
+            services.AddScoped<RepoTransakcije>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -59,7 +62,7 @@ namespace NisHakaton2018
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                    template: "{controller=POS}/{action=Index}/{id?}");
             });
         }
     }
