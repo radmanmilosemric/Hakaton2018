@@ -5051,7 +5051,7 @@
       ]
     },
     "Microsoft.ApplicationInsights/2.4.0": {
-      "sha512": "4dX/zu3Psz9oM3ErU64xfOHuSxOwMxN6q5RabSkeYbX42Yn6dR/kDToqjs+txCRjrfHUxyYjfeJHu+MbCfvAsg==",
+      "sha512": "Yd8jnLNmjONjYxHw7vBfj5pe0P8YvxnleDVnNQm4sZBFw0M78FHAhSFtTOwfAH6z2hxFXAB6Nu91vGsIjR8WMQ==",
       "type": "package",
       "path": "microsoft.applicationinsights/2.4.0",
       "files": [
@@ -5071,7 +5071,7 @@
       ]
     },
     "Microsoft.ApplicationInsights.AspNetCore/2.1.1": {
-      "sha512": "kiGmzl9Cav34dF7AHVMoJxdJJQEeLB8KZGNwX1LjImG9iem5hGk4DkHpW7/m9Nh3DrL8IKSL3mqQo+IPqWfMRQ==",
+      "sha512": "Jm4rZaFiR8N0EgFjrDjIQ/wAUgDgScohzuff+DFyTUcKcb5zw+9X+TVezES9YCTV/e29aC2z2y2EjltwaXSbsA==",
       "type": "package",
       "path": "microsoft.applicationinsights.aspnetcore/2.1.1",
       "files": [
@@ -5084,7 +5084,7 @@
       ]
     },
     "Microsoft.ApplicationInsights.DependencyCollector/2.4.1": {
-      "sha512": "RWxdX90MY6tNF8S5lwRvJcHiBMIWwVLCxd4TGIEl3X0yAKaolY2vs4zTCvyCIVkEAMs1aInTgWkYwOjzYvAHWw==",
+      "sha512": "53m0hB+SPp8BRB3P8iOPjVYYrWh2qwOaDOjRcuZhElCx9lV95f7OovogESUW3IRlwYHMfwGt119VKwKyvVDJ5Q==",
       "type": "package",
       "path": "microsoft.applicationinsights.dependencycollector/2.4.1",
       "files": [
@@ -8965,7 +8965,7 @@
       ]
     },
     "System.Composition/1.0.31": {
-      "sha512": "I+D26qpYdoklyAVUdqwUBrEIckMNjAYnuPJy/h9dsQItpQwVREkDFs4b4tkBza0kT2Yk48Lcfsv2QQ9hWsh9Iw==",
+      "sha512": "VBpmdG0JHe8vB0t77chdch7I5zTStGsF/CRIifr1eN9+gAdLl3RyFKMi4RvcJbAy4UKTchBKF755o0gpZkxrsw==",
       "type": "package",
       "path": "system.composition/1.0.31",
       "files": [
@@ -8976,7 +8976,7 @@
       ]
     },
     "System.Composition.AttributedModel/1.0.31": {
-      "sha512": "NHWhkM3ZkspmA0XJEsKdtTt1ViDYuojgSND3yHhTzwxepiwqZf+BCWuvCbjUt4fe0NxxQhUDGJ5km6sLjo9qnQ==",
+      "sha512": "D/nnYHQjdkvjWcdHyfvI0RHnu27c7EEkFcHQTEO7FMZhR1nXdP645DeMZPcz4euF/90jSGGayNXA6qeN9uoHJA==",
       "type": "package",
       "path": "system.composition.attributedmodel/1.0.31",
       "files": [
@@ -8989,7 +8989,7 @@
       ]
     },
     "System.Composition.Convention/1.0.31": {
-      "sha512": "GLjh2Ju71k6C0qxMMtl4efHa68NmWeIUYh4fkUI8xbjQrEBvFmRwMDFcylT8/PR9SQbeeL48IkFxU/+gd0nYEQ==",
+      "sha512": "Wnp45Uc7SH/HG5F+ZWYzxU5on1ac69cwET+QwomQXjPiJKtXVKRcKMTp6nGvLeOJGclVpK7FPgrseOjmA7gK2w==",
       "type": "package",
       "path": "system.composition.convention/1.0.31",
       "files": [
@@ -9002,7 +9002,7 @@
       ]
     },
     "System.Composition.Hosting/1.0.31": {
-      "sha512": "fN1bT4RX4vUqjbgoyuJFVUizAl2mYF5VAb+bVIxIYZSSc0BdnX+yGAxcavxJuDDCQ1K+/mdpgyEFc8e9ikjvrg==",
+      "sha512": "Z/uAQggDxz9qwcm2HS3B7nVQscA1YX9VxMJgQpkeplDpatSHDxANUtv4tb8GErpcNX7kI5gGO1D2tFdk+xRgHw==",
       "type": "package",
       "path": "system.composition.hosting/1.0.31",
       "files": [
@@ -9015,7 +9015,7 @@
       ]
     },
     "System.Composition.Runtime/1.0.31": {
-      "sha512": "0LEJN+2NVM89CE4SekDrrk5tHV5LeATltkp+9WNYrR+Huiyt0vaCqHbbHtVAjPyeLWIc8dOz/3kthRBj32wGQg==",
+      "sha512": "Z09iCpg6HuyInb6lcO4xu1Yq6KZT0Cmwbn6V8vwcBOa3K5/7r/nj7PXQScexwxUTMJOcHyLjDhde28JJ3XTn6g==",
       "type": "package",
       "path": "system.composition.runtime/1.0.31",
       "files": [
@@ -9028,7 +9028,7 @@
       ]
     },
     "System.Composition.TypedParts/1.0.31": {
-      "sha512": "0Zae/FtzeFgDBBuILeIbC/T9HMYbW4olAmi8XqqAGosSOWvXfiQLfARZEhiGd0LVXaYgXr0NhxiU1LldRP1fpQ==",
+      "sha512": "YbW6SasqAaBzN7a3y3uHJQWzUgli+6qIH2g2CQlRdQ7V251lb4wRAGezn9GHF7zu2f++XEHExsypg310j4Oy3w==",
       "type": "package",
       "path": "system.composition.typedparts/1.0.31",
       "files": [
@@ -13123,8 +13123,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\milrad\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
+    "C:\\Users\\nikmil\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -13133,20 +13132,18 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\SOURCECONTROL\\Hakaton2018\\NISHakaton2018\\NisHakaton2018\\NisHakaton2018.csproj",
+      "projectUniqueName": "C:\\Projects\\Nis2018\\Hakaton2018\\NISHakaton2018\\NisHakaton2018\\NisHakaton2018.csproj",
       "projectName": "NisHakaton2018",
-      "projectPath": "C:\\SOURCECONTROL\\Hakaton2018\\NISHakaton2018\\NisHakaton2018\\NisHakaton2018.csproj",
-      "packagesPath": "C:\\Users\\milrad\\.nuget\\packages\\",
-      "outputPath": "C:\\SOURCECONTROL\\Hakaton2018\\NISHakaton2018\\NisHakaton2018\\obj\\",
+      "projectPath": "C:\\Projects\\Nis2018\\Hakaton2018\\NISHakaton2018\\NisHakaton2018\\NisHakaton2018.csproj",
+      "packagesPath": "C:\\Users\\nikmil\\.nuget\\packages\\",
+      "outputPath": "C:\\Projects\\Nis2018\\Hakaton2018\\NISHakaton2018\\NisHakaton2018\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\milrad\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
+        "C:\\Users\\nikmil\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
