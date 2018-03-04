@@ -18,3 +18,5 @@ C:\SOURCECONTROL\Hakaton2018\NISHakaton2018\POSSystemNIS\bin\Debug\EntityFramewo
 C:\SOURCECONTROL\Hakaton2018\NISHakaton2018\POSSystemNIS\bin\Debug\EntityFramework.xml
 C:\SOURCECONTROL\Hakaton2018\NISHakaton2018\POSSystemNIS\bin\Debug\EntityFramework.SqlServer.xml
 C:\SOURCECONTROL\Hakaton2018\NISHakaton2018\POSSystemNIS\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\SOURCECONTROL\Hakaton2018\NISHakaton2018\POSSystemNIS\obj\Debug\Tablet.g.cs
+C:\SOURCECONTROL\Hakaton2018\NISHakaton2018\POSSystemNIS\obj\Debug\Tablet.baml

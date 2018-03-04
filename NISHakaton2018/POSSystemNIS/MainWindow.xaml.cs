@@ -60,6 +60,8 @@ namespace POSSystemNIS
             set;
         }
 
+        public Tablet TabletWindow { get; set; }
+
         #endregion
 
         public MainWindow()
@@ -91,6 +93,15 @@ namespace POSSystemNIS
             //{
             //    roba = context.Roba.ToList();
             //}
+        }
+
+        private void btnSet_Click(object sender, RoutedEventArgs e)
+        {
+            if (TabletWindow == null)
+            {
+                TabletWindow = new Tablet();
+                TabletWindow.Show();
+            }
         }
     }
 }
