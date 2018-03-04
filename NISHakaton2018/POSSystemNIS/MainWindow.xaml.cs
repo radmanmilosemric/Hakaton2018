@@ -65,6 +65,7 @@ namespace POSSystemNIS
         public MainWindow()
         {
             InitializeComponent();
+            //123
 
             var artikli = new List<Roba>
             {
