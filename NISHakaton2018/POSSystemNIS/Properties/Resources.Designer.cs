@@ -103,6 +103,16 @@ namespace POSSystemNIS.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap kolakafazapon {
+            get {
+                object obj = ResourceManager.GetObject("kolakafazapon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap kolakfaakcija {
             get {
                 object obj = ResourceManager.GetObject("kolakfaakcija", resourceCulture);

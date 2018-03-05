@@ -99,6 +99,9 @@ namespace POSSystemNIS
                     KupacProizvodList = context.KupacProizvodList.OrderByDescending(x => x.BrojKupovina).ToList();
                     //PredlozeniArtikli = GetTop("82223", "7825681598797037", 1, "BS1", false);
                 }
+
+                cbDobaDana.SelectedIndex = 0;
+                cbVrstaPumpe.SelectedIndex = 0;
             }
             catch (Exception ex)
             {

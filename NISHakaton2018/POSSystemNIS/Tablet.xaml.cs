@@ -77,6 +77,10 @@ namespace POSSystemNIS
                     {
                         img = BitmapToImageSource(Properties.Resources.kolavodaakcija);
                     }
+                    if (item.NazivRobe.Contains("DC "))
+                    {
+                        img = BitmapToImageSource(Properties.Resources.kolakafazapon);
+                    }
 
                     if (item.NazivRobe.Contains("ILLY"))
                     {
